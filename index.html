@@ -1,33 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <img class="logo" src="" alt="Логот «Глейси Шоп»">
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
-            <a class="navigation-link" href="delivery-payment.html">Доставка и оплата</a>
-            <a class="navigation-link" href="about.html">О компании</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
-            <a class="navigation-link" href="#">Поиск</a>
-            <a class="navigation-link" href="#">Вход</a>
-            <a class="navigation-link" href="#">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="slide"></div>
-    </main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <img class="logo" src="" alt="Логот «Глейси Шоп»">
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Каталог</a>
+          <a class="navigation-link" href="delivery-payment.html">Доставка и оплата</a>
+          <a class="navigation-link" href="about.html">О компании</a>
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="navigation-link" href="#">Поиск</a>
+          <a class="navigation-link" href="#">Вход</a>
+          <a class="navigation-link" href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-index">
+    <h1 class="visually-hidden">Магазин мороженого «Глейси Шоп»</h1>
+    <div class="slide">
+      <button class="slider-button slider-prev" type="button">
+        <span class="visually-hidden">Предыдущий слайд</span>
+      </button>
+      <button class="slider-button slider-next" type="button">
+        <span class="">Предыдущий слайд</span>
+      </button>
+      <ul class="slide-list">
+        <li class="slide-item">
+          <p class="slide-heading">Нежный пломбир с клубничным джемом</p>
+          <img class="slide-img" src="" alt="Нежный пломбир с клубничным джемом">
+          <p class="slide-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом –
+            это идеальный десерт для всей семьи.</p>
+          <a href="#" class="button button-slide">Заказать</a>
+        </li>
+        <li class="slide-item">
+          <p class="slide-heading">Сливочное мороженое со вкусом банана</p>
+          <img class="slide-img" src="" alt="Сливочное мороженое со вкусом банана">
+          <p class="slide-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
+          <a href="#" class="button button-slide">Заказать</a>
+        </li>
+        <li class="slide-item">
+          <p class="slide-heading">Карамельный пломбир с маршмеллоу</p>
+          <img class="slide-img" src="" alt="Карамельный пломбир с маршмеллоу">
+          <p class="slide-description">Необычный сладкий дессерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+          <a href="#" class="button button-slide">Заказать</a>
+        </li>
+      </ul>
+      <ul class="slide-pagination">
+        <li class="slide-pagination-list">
+          <button class="button button-pagination button-pagination-active">
+            <span class="visually-hidden">Точечная пагинация 1</span>
+          </button>
+        </li>
+        <li class="slide-pagination-list">
+          <button class="button button-pagination button-pagination-active">
+            <span class="visually-hidden">Точечная пагинация 2</span>
+          </button>
+        </li>
+        <li class="slide-pagination-list">
+          <button class="button button-pagination">
+            <span class="visually-hidden">Точечная пагинация 3</span>
+          </button>
+        </li>
+      </ul>
+      <ul class="slide-social-icon">
+        <li class="slide-social-item">
+          <a class="button button-social" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="slide-social-item">
+          <a class="button button-social" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="slide-social-item">
+          <a class="button button-social" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Заказывайте мороженое и получайте подарки!</h2>
+      <div class="section"></div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <section class="footer-social">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button button-social" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button button-social" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button button-social" href="https://www.instagram.com/htmlacademy/">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+      </section>
+  </footer>
+</body>
+
 </html>
