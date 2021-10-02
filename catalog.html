@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог магазин мороженого «Глейси Шоп»</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -37,6 +38,50 @@
             <li class="bread-crumbs-item"><a href="catalog.html">Каталог</a></li>
             <li class="bread-crumbs-item"><a>Сливочное</a></li>
         </ul>
+
+        <form class="sorting-filter" action="https://echo.htmlacademy.ru/" method="GET">
+
+            <label for="sorting">Сортировка:</label>
+            <select name="selec-control" id="sorting" name="sorting">
+                <option value="popular">по пулярности</option>
+                <option value="cheap">сначала дешёвое</option>
+                <option value="expensive">сначала дорогое</option>
+            </select>
+
+            <label for="dayscount">Цена: 100 ₽ – 500 ₽</label>
+            <input type="rang" id="dayscount" name="dayscount" min="100" max="500">
+            
+            <span>Жирность:</span>
+            <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                    <label for="" class="control">
+                        <input type="radio" class="control-input" value="0%">
+                        <span class="control-mark">0%</span>
+                    </label>
+                </li>
+                <li class="catalog-filter-item">
+                    <label for="" class="control">
+                        <input type="radio" class="control-input">
+                        <span class="control-mark">до 10%</span>
+                    </label>
+                </li>
+                <li class="catalog-filter-item">
+                    <label for="" class="control">
+                        <input type="radio" class="control-input">
+                        <span class="control-mark">до 30%</span>
+                    </label>
+                </li>
+                <li class="catalog-filter-item">
+                    <label for="" class="control">
+                        <input type="radio" class="control-input">
+                        <span class="control-mark">выше 30%</span>
+                    </label>
+                </li>
+            </ul>
+
+            <button class="button" type="submit"></button>
+        </form>
+
     </main>
 
     <footer class="main-footer page-footer">
