@@ -58,19 +58,14 @@ img {
 
 .advantages {
     background: #eee2c9 url("/img/bg/wafer-bg.png") no-repeat;
-    width: 1170px;
-    height: 480px;
     padding-top: 10px;
     padding-left: 10px;
     border-radius: 16px;
-
 }
 
 .advantages-container {
     background-color: #FCFCFC;
     border-radius: 16px;
-    width: 1122px;
-    height: 432px;
     padding: 10px;
 }
 
@@ -82,8 +77,6 @@ img {
 }
 
 .section-blog {
-    width: 570px;
-    height: 216px;
     border-radius: 16px;
     background: #ffffff url("/img/bg/news.jpg") no-repeat;
     padding-top: 10px;
@@ -91,8 +84,6 @@ img {
 }
 
 .section-mail {
-    width: 570px;
-    height: 216px;
     border-radius: 16px;
     background: #ffffff url("/img/bg/mail-bg.png") no-repeat;
     padding-top: 10px;
@@ -102,13 +93,9 @@ img {
 .mail-container {
     background-color: #FCFCFC;
     border-radius: 16px;
-    width: 558px;
-    height: 180px;
 }
 
 .delivery {
-    width: 1170px;
-    height: 534px;
     border-radius: 16px;
     background: #ffffff url("/img/bg/delivery-bg.jpg") no-repeat;
     padding-top: 10px;
