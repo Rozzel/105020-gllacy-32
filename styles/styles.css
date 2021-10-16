@@ -38,6 +38,18 @@ body {
     font-style: normal;
     color: #2D3440;
     background-color: #FEAFC3;
+    box-sizing: content-box;
+}
+
+.page-header,
+.page-container,
+.navigation
+{
+    outline: 1px solid #666;
+}
+
+.page-header {
+    display: flex;
 }
 
 .page-container {
@@ -57,14 +69,10 @@ body {
     font-weight: 900;
 }
 
-.navigation {
-    display: flex;
-    margin: 0 auto;
-}
-
 .navigation-list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .navigation-link {
@@ -132,3 +140,12 @@ img {
     padding-top: 10px;
     padding-left: 5px;
 }
+
+/* Готовлюсь скрыть элементы */
+/* .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+} */
