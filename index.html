@@ -9,64 +9,63 @@
 </head>
 
 <body>
-    <header class="page-header page-container">
+    <div class="page-container">
 
-        <a class="logo"><img class="logo-img" src="img/logo.svg" width="137" height="56" alt="Логотип «Глейси Шоп»"></a>
+        <header class="page-header">
 
-        <nav class="navigation">
-            <ul class="navigation-list">
-                <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог</a></li>
-                <li class="navigation-item"><a class="navigation-link" href="delivery-payment.html">Доставка и
-                        оплата</a></li>
-                <li class="navigation-item"><a class="navigation-link" href="about.html">О компании</a></li>
-            </ul>
-        </nav>
+            <a class="logo"><img class="logo-img" src="img/logo.svg" width="137" height="56" alt="Логотип «Глейси Шоп»"></a>
 
-        <ul class="navigation-user navigation-list">
-            <li class="user-item"><a href="tel:+78005558628" class="navigation-link">+7 800 555-86-28</a></li>
-            <li class="user-item"><a href="#" class="navigation-link">Поиск</a></li>
-            <li class="user-item"><a href="#" class="navigation-link">Вход</a></li>
-            <li class="user-item"><a href="#" class="navigation-link">Корзина</a></li>
-        </ul>
-    </header>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="delivery-payment.html">Доставка и оплата</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="about.html">О компании</a></li>
+                </ul>
+            </nav>
+            <div class="navigation-user">
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="#">Поиск</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="#">Вход</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="#">Корзина</a></li>
+                </ul>
+            </div>
+        </header>
 
-    </header>
-
-    <main class="main-container main-index">
-        <div class="page-container">
-
-            <h1 class="visually-hidden">Магазин мороженого «Глейси Шоп»</h1>
+        <main class="main-index">
+            <!-- Скрою позже -->
+            <!-- <h1 class="visually-hidden">Магазин мороженого «Глейси Шоп»</h1> -->
 
             <section class="slide">
                 <ul class="slide-list">
                     <li class="slide-item">
                         <div class="slide-item-left">
-                            <div>
-                                <p class="slide-heading">Нежный пломбир с клубничным джемом</p>
+                                <p class="slide-heading text-bold">Нежный пломбир<br> с клубничным джемом</p>
                                 <p class="slide-description">
                                     Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом –
                                     это идеальный десерт для всей семьи.
                                 </p>
-                            </div>
-                            <a href="#" class="button button-slide">Заказать</a>
+                                <a href="#" class="button button-slide">Заказать</a>
                         </div>
                         <div class="slide-item-right">
-                            <button class="slider-button slider-prev" type="button">
-                                <span class="visually-hidden">Предыдущий слайд</span>
-                            </button>
+                            <!-- Скрою позже -->
+                            <!-- <button class="slider-button slider-prev" type="button">
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button> -->
                             <img class="slide-img" src="img/slider/big-strawberry.png" width="306" height="507"
                                 alt="Нежный пломбир с клубничным джемом">
-                            <button class="slider-button slider-next" type="button">
-                                <span class="visually-hidden">Следующий слайд</span>
-                            </button>
+                            <!-- Скрою позже -->
+                                <!-- <button class="slider-button slider-next" type="button">
+                                <span class="visually-hidden">Следующий</span>
+                            </button> -->
                             <img src="/img/slider/small-banana.png" width="66" height="150" alt="Мороженое"
                                 class="slide-img-small">
                             <img src="/img/slider/small-marshmallows.png" width="66" height="150" alt="Мороженое"
                                 class="slide-img-small">
                         </div>
                     </li>
-
-                    <li class="slide-item">
+                    <!-- Как сделаю слайдер изменю контент -->
+                    <!-- <li class="slide-item">
                         <div class="slide-item-left">
                             <div>
                                 <p class="slide-heading">Сливочное мороженое со вкусом банана</p>
@@ -121,23 +120,23 @@
                             <img src="img/slider/small-banana.png" width="66" height="150" alt="Мороженое"
                                 class="slide-img-small">
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
 
                 <ul class="slide-pagination">
                     <li class="slide-pagination-list">
                         <button class="button button-pagination button-pagination-active">
-                            <span class="visually-hidden">Точечная пагинация 1</span>
+                            <span class="visually-hidden">Пагинация 1</span>
                         </button>
                     </li>
                     <li class="slide-pagination-list">
                         <button class="button button-pagination button-pagination-active">
-                            <span class="visually-hidden">Точечная пагинация 2</span>
+                            <span class="visually-hidden">Пагинация 2</span>
                         </button>
                     </li>
                     <li class="slide-pagination-list">
                         <button class="button button-pagination">
-                            <span class="visually-hidden">Точечная пагинация 3</span>
+                            <span class="visually-hidden">Пагинация 3</span>
                         </button>
                     </li>
                 </ul>
@@ -327,11 +326,10 @@
                 </address>
                 <button type="button">Форма обратной связи</button>
             </section>
-        </div>
-    </main>
 
-    <footer class="page-footer">
-        <div class="page-container">
+        </main>
+
+        <footer class="page-footer">
             <section class="footer-section footer-bottom">
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
@@ -366,8 +364,9 @@
                     <p>Сделано в <a href="https://htmlacademy.ru" target="_blank">.html academy</a> © 2021</p>
                 </div>
             </section>
-        </div>
-    </footer>
+        </footer>
+
+    </div>
 </body>
 
 </html>
