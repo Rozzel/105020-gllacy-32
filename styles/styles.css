@@ -160,7 +160,6 @@ body {
     line-height: 24px;
     margin: 0 0 48px 0;
     padding: 0;
-
 }
 
 .slide-item-right {
@@ -239,6 +238,17 @@ img {
     background: #ffffff url("/img/bg/delivery-bg.jpg") no-repeat;
     padding-top: 10px;
     padding-left: 5px;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration:none;
+}
+
+.button-slide {
+    color: #2D3440;
 }
 
 /* Готовлюсь скрыть элементы */
