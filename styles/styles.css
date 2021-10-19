@@ -185,6 +185,36 @@ body {
     list-style-type: none;
 }
 
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.showcase-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.showcase-img {
+    align-self: center;
+}
+
+.showcase-item {
+    list-style-type: none;
+    width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #FCFCFC;
+    margin-right: 30px;
+    margin-top: 40px;
+    border-radius: 16px;
+    padding: 0 40px 28px 40px;
+}
+
+.showcase-item::
+
 img {
     max-width: 100%;
     object-fit: contain;
