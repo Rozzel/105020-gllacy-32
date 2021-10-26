@@ -85,6 +85,57 @@ body {
     padding: 16px;
 }
 
+.bread-crumbs {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 900;
+    padding: 0;
+}
+
+.bread-crumbs,
+.bread-crumbs a {
+    color: #2D3440;
+}
+
+.bread-crumbs a {
+    padding: 16px;
+}
+
+.sorting-filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "f1 f2 f3 f3"
+        "f4 f4 f4 f5";
+}
+
+.sorting-filter fieldset:nth-child(1) {
+    grid-area: f1;
+}
+
+.sorting-filter fieldset:nth-child(2) {
+    grid-area: f2;
+}
+
+.sorting-filter fieldset:nth-child(3) {
+    grid-area: f3;
+}
+
+.sorting-filter fieldset:nth-child(4) {
+    grid-area: f4;
+}
+
+.sorting-filter button {
+    grid-area: f5;
+}
+
+.catalog-filter-list {
+    display: flex;
+    gap: 21px;
+}
+
 .slide {
     margin: 0;
     padding: 0;
@@ -168,6 +219,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
+    padding: 0;
+    text-align: center;
 }
 
 .showcase-item {
@@ -222,6 +275,7 @@ img {
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr;
+    padding: 0;
 }
 
 .section-present-item {
@@ -375,9 +429,32 @@ img {
 
 .page-footer {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     padding-top: 40px;
+}
+
+.show-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-more div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.show-more-list {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+}
+
+.show-more-list a {
+    color: #2D3440;
+    text-decoration: none;
 }
 
 .footer-social-list{
@@ -417,11 +494,10 @@ img {
     color: #2D3440;
 }
 
-/* Готовлюсь скрыть элементы */
 /* .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
-} */
+}
