@@ -104,11 +104,15 @@ body {
 }
 
 .sorting-filter {
+    width: 850px;
     display: grid;
+    gap: 24px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "f1 f2 f3 f3"
         "f4 f4 f4 f5";
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .sorting-filter fieldset:nth-child(1) {
@@ -133,7 +137,8 @@ body {
 
 .catalog-filter-list {
     display: flex;
-    gap: 21px;
+    gap: 16px;
+    padding: 0;
 }
 
 .slide {
