@@ -39,11 +39,11 @@ body {
     box-sizing: content-box;
 }
 
-.title {
+.text-bold {
     font-weight: 700;
 }
 
-.text-bold {
+.text-black {
     font-weight: 900;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 .bread-crumbs a {
-    padding: 16px;
+    padding: 16px 16px 16px 0px;
 }
 
 .sorting-filter {
@@ -440,6 +440,7 @@ img {
 
 .show-more {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         ". second third";
     margin: 0;
