@@ -27,6 +27,7 @@ html {
 }
 
 body {
+  min-width: 1170px;
   margin: 0;
   min-height: 100%;
   font-family: "Inter", sans-serif;
@@ -162,7 +163,6 @@ body {
 
 .slide-pagination-list {
   margin-right: 8px;
-  outlines: 1 red;
 }
 
 .slide-social-icon {
@@ -266,6 +266,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   object-fit: contain;
 }
@@ -412,22 +413,28 @@ img {
 }
 
 .section-mail {
+  display: flex;
   padding: 0;
   border-radius: 16px;
   background: #ffffff url("/img/bg/mail-bg.png") no-repeat;
   padding: 5px;
   box-sizing: content-box;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .mail-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: #FCFCFC;
   border-radius: 16px;
+  padding: 26px;
 }
 
-
-.mail-container div {
-  margin: 32px;
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr 152px;
+  gap: 24px;
 }
 
 .address {
