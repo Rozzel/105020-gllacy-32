@@ -567,11 +567,6 @@ img {
   margin: -1px;
 }
 
-/* Временные стили */
-.footer-social-item {
-  outline: 2px solid #000;
-}
-
-.footer-social-item>a {
+.footer-social-item > a {
   padding: 16px;
 }
