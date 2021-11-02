@@ -317,7 +317,7 @@ img {
 }
 
 .advantages {
-  background: #eee2c9 url("/img/bg/wafer-bg.png") no-repeat;
+  background: #EEE2C9 url("/img/bg/wafer-bg.png") no-repeat;
   border-radius: 16px;
   margin: 0;
   margin-top: 80px;
@@ -359,7 +359,7 @@ img {
   align-items: center;
   margin-top: 80px;
   border-radius: 16px;
-  background: #ffffff url("/img/bg/delivery-bg.jpg") no-repeat;
+  background: #FFFFFF url("/img/bg/delivery-bg.jpg") no-repeat;
   min-height: 534px;
   padding: 0;
 }
@@ -440,14 +440,14 @@ img {
 .section-blog {
   padding: 32px 235px 65px 32px;
   border-radius: 16px;
-  background: #ffffff url("/img/bg/news.jpg") no-repeat;
+  background: #FFFFFF url("/img/bg/news.jpg") no-repeat;
 }
 
 .section-mail {
   display: flex;
   padding: 0;
   border-radius: 16px;
-  background: #ffffff url("/img/bg/mail-bg.png") no-repeat;
+  background: #FFFFFF url("/img/bg/mail-bg.png") no-repeat;
   padding: 5px;
   box-sizing: content-box;
   font-size: 16px;
@@ -473,7 +473,7 @@ img {
   min-height: 492px;
   padding: 0;
   border-radius: 16px;
-  background: #ffffff url("/img/bg/address-bg.jpg") no-repeat;
+  background: #FFFFFF url("/img/bg/address-bg.jpg") no-repeat;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
