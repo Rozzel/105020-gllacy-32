@@ -101,9 +101,9 @@ img {
 }
 
 .navigation-list {
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .navigation-item {
@@ -112,30 +112,64 @@ img {
 
 .navigation-user li:nth-child(1) {
   font-weight: 700;
+  margin-right: 2px;
 }
 
-.navigation-user li:nth-child(2) .navigation-link {
-  background: url("/img/icons/search.svg") no-repeat center;
-  position: relative;
-}
-
-.navigation-user li:nth-child(2) .navigation-link::before {
-  position: absolute;
-  content: "";
+.navigation-user li:nth-child(2) {
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
   width: 32px;
   height: 32px;
-  border-radius: 50%;
-  z-index: -1;
-  right: 0px;
-  top: 10px;
+  margin: auto;
+}
+
+.navigation-user .navigation-item {
+  margin-left: 16px;
+}
+
+.navigation-user li:nth-child(3),
+.navigation-user li:nth-child(4) {
+  position: relative;
   background: rgba(252, 252, 252, 0.3);
+  border-radius: 26px;
+  height: 40px;
+  top: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.navigation-icon{
+  transform: translate(0, -4px);
+
+}
+
+.icon-text {
+  position: relative;
+  top: -6px;
 }
 
 .navigation-link {
+  position: relative;
+  display: block;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   padding: 16px;
+}
+
+.icon-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #2D3440;
+}
+
+.icon-cart {
+  fill: white;
 }
 
 .bread-crumbs {
@@ -215,14 +249,21 @@ img {
   margin-right: 8px;
 }
 
-.slide-social-icon {
+.slide-social {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.slide-social-item {
-  margin-left: 16px;
+.social-icon {
+  fill: #FCFCFC;
+  width: 24px;
+  height: 24px;
+  margin: auto;
+}
+
+.slide-social-link {
+  padding: 8px;
 }
 
 .slide-list {
@@ -233,11 +274,12 @@ img {
 }
 
 .slide-item-left {
-  width: 470px;
+  width: 440px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  margin-right: 30px;
   margin-left: 70px;
 }
 
@@ -255,6 +297,7 @@ img {
   line-height: 24px;
   margin: 0 0 48px 0;
   padding: 0;
+  max-width: 410px;
   max-height: 170px;
   overflow: auto;
 }
@@ -264,6 +307,35 @@ img {
   flex-flow: row wrap;
   align-items: center;
   position: relative;
+}
+
+.slider-button-group {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  left: -19px;
+}
+
+.slider-button {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+  border: 2px solid #FCFCFC;
+  border-radius: 26px;
+  background: rgba(252, 252, 252, 0.3);
+  z-index: 1;
+}
+
+.slide-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #FCFCFC;
 }
 
 .circle {
@@ -355,6 +427,15 @@ img {
   line-height: 46px;
   font-weight: 900;
   width: 100%;
+}
+
+.button-cart {
+  position: relative;
+  background: #FF2F64;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
 }
 
 .section {
@@ -557,7 +638,10 @@ img {
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
-.button:hover {
+.button:hover,
+.slider-button:hover,
+.button-pagination:hover,
+.button-cart:hover {
   cursor: pointer;
 }
 
@@ -570,6 +654,19 @@ img {
   color: #FCFCFC;
   background: #FF2F64;
   border: 4px solid rgba(218, 173, 184, 0.3);
+}
+
+.button-pagination {
+  width: 12px;
+  height: 12px;
+  background: #FCFCFC;
+  opacity: 0.3;
+  border: none;
+  border-radius: 50%;
+}
+
+.button-pagination-active {
+  opacity: 1;
 }
 
 .slide-item-left>a {
@@ -765,12 +862,21 @@ img {
   line-height: 20px;
   font-weight: 400;
   align-self: start;
-
-
 }
 
 .footer-info li:first-child {
   font-weight: 700;
+  position: relative;
+}
+
+.footer-info li:first-child::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("/img/icons/heart-fill.svg") no-repeat;
+  left: -15px;
+  top: 1px;
 }
 
 .footer-info,
@@ -784,8 +890,10 @@ img {
 }
 
 .footer-developer {
-  justify-self: end;
-  align-self: flex-end
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: auto;
 }
 
 .footer-developer,
@@ -794,6 +902,11 @@ img {
   line-height: 16px;
   font-weight: 400;
   color: #2D3440;
+}
+
+.footer-developer p,
+.footer-developer img {
+  margin: 0;
 }
 
 .footer-developer a {
@@ -809,5 +922,5 @@ img {
 }
 
 .footer-social-item>a {
-  padding: 16px;
+  padding: 8px;
 }
