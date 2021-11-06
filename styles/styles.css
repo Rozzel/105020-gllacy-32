@@ -103,6 +103,7 @@ img {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 3px;
   padding: 0;
 }
 
@@ -137,40 +138,35 @@ img {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
-input:hover {
+.forms-states input:hover {
   outline: 1px solid #2D3440;
   outline-offset: -1px;
 }
 
-*:focus {
-  outline: 2px solid #2D3440;
-  outline-offset: -1px;
-}
-
-input:invalid {
+.forms-states input:invalid {
   outline: 1px solid #EA5454;
   outline-offset: -1px;
 }
 
-input:invalid:focus {
+.forms-states input:invalid:focus {
   outline: 2px solid #EA5454;
   outline-offset: -1px;
 }
 
-input:disabled {
+.forms-states input:disabled {
   background: #E7E7E7;
   border: 1px solid #B9B9B9;
 }
 
-input:hover::placeholder {
+.forms-states input:hover::placeholder {
   color: #2D3440;
 }
 
-input:focus::placeholder {
+.forms-states input:focus::placeholder {
   color: #2D3440;
 }
 
-input[disabled] {
+.forms-states input[disabled] {
   outline: none;
 }
 
@@ -274,12 +270,7 @@ input[disabled] {
 .slide-social {
   justify-self: end;
   display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.social-icon {
-  fill: #FCFCFC;
+  gap: 16px;
 }
 
 .social-icon:hover {
@@ -361,14 +352,37 @@ input[disabled] {
   z-index: 1;
 }
 
-.slide-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+.slider-button[disabled] {
+  opacity: 0.4;
+}
+
+.slider-button:hover {
+  background: #FCFCFC;
+  transition: 1s;
+}
+
+.slider-button:hover .slide-icon {
+  fill: #2D3440;
+  transition: 1s;
+}
+
+.slider-button:focus .slide-icon {
+  fill: #2D3440;
+}
+
+.slide-icon,
+.social-icon {
   fill: #FCFCFC;
+}
+
+.social-link {
+  border-radius: 26px;
+  width: 16px;
+  height: 16px;
+  margin-left: 24px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .circle {
@@ -465,10 +479,30 @@ input[disabled] {
 .button-cart {
   position: relative;
   background: #FF2F64;
-  border: none;
+  border: 2px solid #FF2F64;
   border-radius: 50%;
   width: 32px;
   height: 32px;
+}
+
+.button-cart:hover {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FF2F64;
+  transition: 1s;
+}
+
+.button-cart:hover .icon-cart {
+  fill: black;
+  transition: 1s;
+}
+
+.button-cart:disabled {
+  background: #B9B9B9;
+  border: 2px solid #B9B9B9;
+}
+
+.button-cart:disabled .icon-cart  {
+  fill: #565C66;
 }
 
 .section {
@@ -601,7 +635,6 @@ input[disabled] {
   border-radius: 50%;
 }
 
-
 .section-item:nth-child(1)::before {
   background: url("/img/icons/ice-cream.svg") no-repeat;
 }
@@ -724,13 +757,6 @@ input[disabled] {
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
-.button:hover,
-.slider-button:hover,
-.button-pagination:hover,
-.button-cart:hover {
-  cursor: pointer;
-}
-
 .button-light {
   background: #FCFCFC;
   border: 4px solid rgba(221, 180, 180, 0.4);
@@ -753,6 +779,15 @@ input[disabled] {
 .button-pagination:hover {
   outline: 1px solid #FCFCFC;
   outline-offset: -1px;
+}
+
+.focus:focus {
+  outline: 2px solid #2D3440;
+  outline-offset: -1px;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .button-pagination:focus {
