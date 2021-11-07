@@ -180,13 +180,18 @@ img {
   background: #FCFCFC;
 }
 
-.navigation-user li:nth-child(2)>a {
-  padding: 8px 10px;
-}
-
-.navigation-item>a:not([href]) {
+.navigation-link:not([href]) {
   color: #FCFCFC;
   background-color: #FF4A78;
+  cursor: auto;
+}
+
+.cart-full {
+  background: #FCFCFC;
+}
+
+.navigation-user li:nth-child(2)>a {
+  padding: 8px 10px;
 }
 
 .icon {
@@ -202,17 +207,34 @@ img {
   gap: 12px;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 900;
+  font-weight: 700;
   padding: 0;
 }
 
-.bread-crumbs,
 .bread-crumbs a {
   color: #2D3440;
+  text-decoration: none;
+  padding: 2px 1px;
+  border-bottom: 1px solid #2D3440;
 }
 
-.bread-crumbs a {
-  padding: 16px 16px 16px 0px;
+.bread-crumbs a:not([href]) {
+  border-bottom: none;
+}
+
+.bread-crumbs-item {
+  position: relative;
+  margin-right: 18px;
+}
+
+.bread-crumbs-item:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url(/img/icons/chevrons-right.svg) no-repeat;
+  top: 5px;
+  right: -20px;
 }
 
 .sorting-filter {
@@ -345,7 +367,6 @@ img {
   position: relative;
   width: 38px;
   height: 38px;
-  box-sizing: border-box;
   border: 2px solid #FCFCFC;
   border-radius: 26px;
   background: rgba(252, 252, 252, 0.3);
@@ -376,7 +397,7 @@ img {
 }
 
 .social-icon:hover {
-  fill:#2D3440;
+  fill: #2D3440;
   transition: 1s;
 }
 
@@ -511,7 +532,7 @@ img {
   border: 2px solid #B9B9B9;
 }
 
-.button-cart:disabled .icon-cart  {
+.button-cart:disabled .icon-cart {
   fill: #565C66;
 }
 
@@ -575,15 +596,15 @@ img {
 }
 
 .section-present-item:nth-child(1) {
-  background: #FF7799 url("../img/present/present-raspberries.png") no-repeat right 15px bottom;
+  background: #FF7799 url("/img/present/present-raspberries.png") no-repeat right 15px bottom;
 }
 
 .section-present-item:nth-child(2) {
-  background: #FF7799 url("../img/present/present-marshmallows.png") no-repeat right bottom;
+  background: #FF7799 url("/img/present/present-marshmallows.png") no-repeat right bottom;
 }
 
 .advantages {
-  background: #EEE2C9 url("../img/bg/wafer-bg.png") no-repeat;
+  background: #EEE2C9 url("/img/bg/wafer-bg.png") no-repeat;
   border-radius: 16px;
   margin: 0;
   margin-top: 80px;
@@ -646,19 +667,19 @@ img {
 }
 
 .section-item:nth-child(1)::before {
-  background: url("../img/icons/ice-cream.svg") no-repeat;
+  background: url("/img/icons/ice-cream.svg") no-repeat;
 }
 
 .section-item:nth-child(2)::before {
-  background: url("../img/icons/cow.svg") no-repeat;
+  background: url("/img/icons/cow.svg") no-repeat;
 }
 
 .section-item:nth-child(3)::before {
-  background: url("../img/icons/leaf.svg") no-repeat;
+  background: url("/img/icons/leaf.svg") no-repeat;
 }
 
 .section-item:nth-child(4)::before {
-  background: url("../img/icons/thermometer.svg") no-repeat;
+  background: url("/img/icons/thermometer.svg") no-repeat;
 }
 
 
@@ -668,7 +689,7 @@ img {
   align-items: center;
   margin-top: 80px;
   border-radius: 16px;
-  background: #FFFFFF url("../img/bg/delivery-bg.jpg") no-repeat;
+  background: #FFFFFF url("/img/bg/delivery-bg.jpg") no-repeat;
   min-height: 534px;
   padding: 0;
 }
@@ -725,7 +746,7 @@ img {
   width: 16px;
   height: 16px;
   position: absolute;
-  background: url("../img/icons/info.svg") no-repeat;
+  background: url("/img/icons/info.svg") no-repeat;
   right: auto;
   top: 0px;
   transform: translate(5px, 0);
@@ -765,6 +786,23 @@ img {
   border-radius: 26px;
   padding: 12px 32px;
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.button-slight {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+}
+
+.button-slight:hover {
+  background: #FCFCFC;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.button-slight:disabled {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  opacity: 0.4;
+  cursor: auto;
 }
 
 .button-light {
@@ -826,19 +864,19 @@ img {
 .loader {
   display: inline-block;
   transform: translate(0, 4px) rotate(45deg);
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
 }
 
 .loader-black {
   border: 2px solid rgba(36, 36, 36, 0.24);
-	border-top: 2px solid #242424 ;
+  border-top: 2px solid #242424;
 }
 
 .loader-white {
   border: 2px solid rgba(252, 252, 252, 0.24);
-	border-top: 2px solid #FCFCFC ;
+  border-top: 2px solid #FCFCFC;
 }
 
 .button-pagination:focus {
@@ -865,7 +903,7 @@ img {
 .section-blog {
   padding: 32px 235px 65px 32px;
   border-radius: 16px;
-  background: #FFFFFF url("../img/bg/news.jpg") no-repeat;
+  background: #FFFFFF url("/img/bg/news.jpg") no-repeat;
 }
 
 .wrapper-blog {
@@ -894,7 +932,7 @@ img {
   display: flex;
   padding: 0;
   border-radius: 16px;
-  background: #FFFFFF url("../img/bg/mail-bg.png") no-repeat;
+  background: #FFFFFF url("/img/bg/mail-bg.png") no-repeat;
   padding: 5px;
   box-sizing: content-box;
   font-size: 16px;
@@ -929,7 +967,7 @@ img {
   min-height: 492px;
   padding: 0;
   border-radius: 16px;
-  background: #FFFFFF url("../img/bg/address-bg.jpg") no-repeat;
+  background: #FFFFFF url("/img/bg/address-bg.jpg") no-repeat;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -954,7 +992,7 @@ img {
   color: #565C66;
 }
 
-.address-bold  {
+.address-bold {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1013,10 +1051,52 @@ img {
   padding: 0;
 }
 
+.show-more-list li {
+  margin-left: 16px;
+}
+
 .show-more-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #2D3440;
   text-decoration: none;
-  padding: 10px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(252, 252, 252, 0);
+  border-radius: 26px;
+}
+
+.show-more-list a:hover {
+  border: 1px solid #FCFCFC;
+  background: rgba(252, 252, 252, 0.3);
+}
+
+.show-more-list a:focus {
+  background: rgba(252, 252, 252, 0.3);
+  border: 1px solid #2D3440;
+}
+
+.show-more-list a:not([href]) {
+  border: 1px solid #FCFCFC;
+  background: #FCFCFC;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 26px;
+}
+
+.arrow svg {
+  fill: #2D3440;
+}
+
+.arrow:not([href]) svg {
+  fill: rgba(45, 52, 64, 0.3);
 }
 
 .footer-social-list {
@@ -1049,7 +1129,7 @@ img {
   content: "";
   width: 16px;
   height: 16px;
-  background: url("../img/icons/heart-fill.svg") no-repeat;
+  background: url("/img/icons/heart-fill.svg") no-repeat;
   left: -15px;
   top: 1px;
 }
