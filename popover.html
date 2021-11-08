@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 
   <style type="text/css">
+
     .popover {
       position: absolute;
       top: 0;
@@ -17,10 +18,8 @@
       color: #242424;
       box-sizing: border-box;
       padding: 48px;
-
       background: #FCFCFC;
       border-radius: 4px;
-      min-height: 186px;
       box-shadow: 0 18px 40px rgba(79, 70, 60, 0.16);
       display: none;
     }
@@ -31,6 +30,27 @@
 
     .popover-cart {
       width: 441px;
+    }
+
+    .popover-cart-empty {
+      top: 500px;
+      right: 50px;
+
+      max-width: 300px;
+    }
+
+    .popover-search {
+      top: 200px;
+      right: 50px;
+
+      max-width: 356px;
+      padding: 24px 16px;
+
+    }
+
+    .forms-popover-search {
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .popover-content {
@@ -46,6 +66,11 @@
       color: #2D3440;
     }
 
+    .popover-cart-empty .popover-title {
+      text-align: center;
+      margin-bottom: 0;
+    }
+
     .cart-items-list {
       display: flex;
       row-gap: 24px;
@@ -54,8 +79,6 @@
       padding: 0;
     }
 
-    .cart-item-title,
-    .cart-item-scales,
     .cart-items-list p {
       margin: 0;
       padding: 0;
@@ -169,9 +192,19 @@
 
   </div>
 
+  <div class="popover popover-cart-empty popover-open">
+    <div class="popover-content">
+      <h2 class="popover-title">Ваша корзина пока пуста</h2>
+    </div>
 
+    <div class="popover popover-search popover-open">
+      <div class="popover-content">
+        <form action="https://echo.htmlacademy.ru/" method="POST" class="forms-states">
+          <input class="forms forms-popover-search" type="text" placeholder="Поиск по сайту">
+        </form>
+      </div>
 
-
+  </div>
 
 </body>
 
