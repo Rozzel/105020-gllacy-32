@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="styles/styles.css">
 
   <style type="text/css">
-
     .popover {
       position: absolute;
       top: 0;
@@ -36,16 +35,21 @@
       top: 500px;
       right: 50px;
 
-      max-width: 300px;
+      width: 288px;
     }
 
     .popover-search {
       top: 200px;
       right: 50px;
 
-      max-width: 356px;
+      width: 356px;
       padding: 24px 16px;
+    }
 
+    .popover-personal-area {
+      top: 200px;
+      right: 50px;
+      width: 420px;
     }
 
     .forms-popover-search {
@@ -69,6 +73,27 @@
     .popover-cart-empty .popover-title {
       text-align: center;
       margin-bottom: 0;
+    }
+
+    .personal-area-form div {
+      display: grid;
+      grid-template-columns: 113px 1fr;
+      column-gap: 23px;
+      align-items: center;
+    }
+
+    .popover-personal-area p {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .popover-personal-area a {
+      text-decoration: none;
+      color: #2D3440;
+      border-bottom: 1px solid #2D3440;
     }
 
     .cart-items-list {
@@ -204,7 +229,23 @@
         </form>
       </div>
 
-  </div>
+      <div class="popover popover-personal-area popover-open">
+        <div class="popover-content">
+          <h2 class="popover-title">Личный кабинет</h2>
+          <form action="https://echo.htmlacademy.ru/" method="POST" class="forms-states personal-area-form">
+            <input class="forms forms-popover-search" type="email" placeholder="email@example.com">
+            <input class="forms forms-popover-search" type="password" placeholder="&#8226; &#8226; &#8226; &#8226; &#8226; &#8226;">
+            <div>
+              <button type="button" class="button button-bright focus pointer">Войти</button>
+              <p>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Регистрация</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+      </div>
 
 </body>
 
