@@ -18,38 +18,113 @@
       <nav class="navigation">
         <ul class="navigation-list list-none">
           <li class="navigation-item"><a class="navigation-link focus pointer">Каталог</a></li>
-          <li class="navigation-item"><a class="navigation-link focus pointer" href="delivery-payment.html">Доставка и
-              оплата</a></li>
+          <li class="navigation-item"><a class="navigation-link focus pointer" href="delivery-payment.html">Доставка и оплата</a></li>
           <li class="navigation-item"><a class="navigation-link focus pointer" href="about.html">О компании</a></li>
         </ul>
       </nav>
 
       <ul class="navigation-user navigation-list list-none">
-        <li class="navigation-item"><a class="navigation-link focus pointer" href="tel:+78005558628">+7 800 555-86-28</a>
+
+        <li class="navigation-item">
+          <a class="navigation-link focus pointer" href="tel:+78005558628">+7 800 555-86-28</a>
         </li>
+
         <li class="navigation-item">
           <a class="navigation-link link-user focus pointer" href="about.html">
             <svg class="icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6634 7.33c0-2.5773 2.0893-4.6666 4.6667-4.6666 2.5773 0 4.6666 2.0893 4.6666 4.6667 0 1.2573-.4972 2.3984-1.3057 3.2375a.6833.6833 0 0 0-.1234.1235c-.8391.8085-1.9803 1.3056-3.2375 1.3056-2.5774 0-4.6667-2.0893-4.6667-4.6666Zm8.4118 4.688a5.9747 5.9747 0 0 1-3.7451 1.3121c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6a5.9745 5.9745 0 0 1-1.3121 3.7451l2.4501 2.4501a.6667.6667 0 1 1-.9428.9429l-2.4501-2.4502Z" fill="#2D3440" />
             </svg>
-            <spn class="visually-hidden">Поиск</spn>
+            <span class="visually-hidden">Поиск</span>
           </a>
+
+          <div class="popover popover-search">
+            <div class="popover-content">
+              <form action="https://echo.htmlacademy.ru/" method="POST" class="forms-states">
+                <label class="visually-hidden" for="search-search">Поиск по сайту</label>
+                <input class="forms forms-popover-search" type="text" placeholder="Поиск по сайту" name="search-search" id="search-search">
+              </form>
+            </div>
+
         </li>
-        <li class="navigation-item"><a class="navigation-link link-user focus pointer" href="#">
+
+        <li class="navigation-item">
+          <a class="navigation-link link-user focus pointer" href="#">
             <svg class="icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.6667A.6667.6667 0 0 1 9.6667 1h2.6666a1.9997 1.9997 0 0 1 2 2v9.3333a1.9996 1.9996 0 0 1-2 2H9.6667a.6666.6666 0 1 1 0-1.3333h2.6666a.6664.6664 0 0 0 .4714-.1953.6664.6664 0 0 0 .1953-.4714V3a.6664.6664 0 0 0-.6667-.6667H9.6667A.6667.6667 0 0 1 9 1.6667ZM5.8619 3.8619a.6667.6667 0 0 1 .9428 0l3.3291 3.3291a.6624.6624 0 0 1 .129.177.664.664 0 0 1 .0705.2987.6636.6636 0 0 1-.1998.4759l-3.3288 3.3288a.6667.6667 0 1 1-.9428-.9428L8.057 8.3333H1.6668a.6667.6667 0 1 1 0-1.3333h6.3905L5.8619 4.8047a.6667.6667 0 0 1 0-.9428Z" fill="#2D3440" />
             </svg>
             <span>Вход</span>
           </a>
+
+          <div class="popover popover-personal-area">
+            <div class="popover-content">
+              <h2 class="popover-title">Личный кабинет</h2>
+              <form action="https://echo.htmlacademy.ru/" method="POST" class="forms-states personal-area-form">
+                <label class="visually-hidden" for="area-form-login">Логин</label>
+                <input class="forms forms-popover-search" type="email" placeholder="email@example.com" name="area-form-login" id="area-form-login">
+                <label class="visually-hidden" for="area-form-password">Логин</label>
+                <input class="forms forms-popover-search" type="password" placeholder="&#8226; &#8226; &#8226; &#8226; &#8226; &#8226;" name="area-form-password" id="area-form-password">
+                <div>
+                  <button type="button" class="button button-bright focus pointer">Войти</button>
+                  <p>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+
         </li>
-        <li class="navigation-item"><a class="navigation-link link-user focus pointer cart-full" href="#">
-            <svg class="icon" aria-hidden="true" focusable="false" width="17" height="16" viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.645874 1.15623C0.645874 0.78804 0.944351 0.489563 1.31254 0.489563H3.91999C4.23774 0.489563 4.51133 0.71382 4.57369 1.02539L5.11879 3.74887H15.6535C15.8522 3.74887 16.0405 3.83749 16.1672 3.99058C16.2938 4.14366 16.3456 4.34526 16.3084 4.54042L15.2654 10.0095L15.2644 10.0145L15.2644 10.0145C15.1743 10.4681 14.9276 10.8756 14.5673 11.1655C14.209 11.454 13.761 11.608 13.3011 11.6008H6.97639C6.51652 11.608 6.06854 11.454 5.71016 11.1655C5.35008 10.8757 5.10338 10.4685 5.0132 10.0151L5.01308 10.0145L3.92432 4.57477C3.91985 4.55652 3.91612 4.53797 3.91319 4.51917L3.37353 1.8229H1.31254C0.944351 1.8229 0.645874 1.52442 0.645874 1.15623ZM6.5285 12.8755C5.80055 12.8755 5.21043 13.4656 5.21043 14.1936C5.21043 14.9215 5.80055 15.5117 6.5285 15.5117C7.25644 15.5117 7.84656 14.9215 7.84656 14.1936C7.84656 13.4656 7.25644 12.8755 6.5285 12.8755ZM13.6985 12.8755C12.9705 12.8755 12.3804 13.4656 12.3804 14.1936C12.3804 14.9215 12.9705 15.5117 13.6985 15.5117C14.4264 15.5117 15.0166 14.9215 15.0166 14.1936C15.0166 13.4656 14.4264 12.8755 13.6985 12.8755Z" fill="#2D3440" />
-            </svg>
-            <span class="visually-hidden">Корзина</span>
+
+        <li class="navigation-item">
+          <a class="navigation-link link-user link-user-cart focus pointer" href="#">
+            <div class="icon navigation-icon-cart navigation-icon-full"></div>
             <span>2 товара</span>
           </a>
+
+          <div class="popover popover-cart popover-open">
+            <div class="popover-content">
+              <h2 class="popover-title">Корзина</h2>
+              <ul class="cart-items-list list-none">
+                <li class="cart-item">
+                  <img src="img/product/raspberries.png" width="46" height="46" alt="Малинка">
+                  <div class="item-title-scales">
+                    <p class="cart-item-title">Малинка</p>
+                    <p class="cart-item-scales">1 кг х 310 ₽</p>
+                  </div>
+                  <p class="cart-item-price">310 ₽</p>
+                  <button type="button" class="cart-item-button focus pointer">
+                    <img src="img/icons/cross.svg" width="19" height="19" alt="Малинка">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <img src="img/product/bubble-gum.png" width="46" height="46" alt="Малинка">
+                  <div class="item-title-scales">
+                    <p class="cart-item-title">Бабл-гам</p>
+                    <p class="cart-item-scales">1,5 кг х 320 ₽</p>
+                  </div>
+                  <p class="cart-item-price">480 ₽</p>
+                  <button type="button" class="cart-item-button focus pointer">
+                    <img src="img/icons/cross.svg" width="19" height="19" alt="Малинка">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="cart-items-total">
+                <button type="button" class="button button-bright focus pointer">Оформить заказ</button>
+                <p>Итого: 790 ₽</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="popover popover-cart-empty">
+            <div class="popover-content">
+              <h2 class="popover-title popover-title-center">Ваша корзина<br> пока пуста</h2>
+            </div>
+
         </li>
+
       </ul>
 
     </header>

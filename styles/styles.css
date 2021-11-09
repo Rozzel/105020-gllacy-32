@@ -80,7 +80,7 @@ img {
 }
 
 .forms {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   padding: 14px 16px;
   font-size: 16px;
   line-height: 20px;
@@ -113,6 +113,7 @@ img {
 }
 
 .navigation-item {
+  position: relative;
   margin: 15px 0 15px 0;
 }
 
@@ -138,6 +139,10 @@ img {
 
 .link-user {
   background-color: rgba(252, 252, 252, 0.3);
+}
+
+.link-user-cart {
+  background-color: #FCFCFC;
 }
 
 .navigation-link:hover {
@@ -200,6 +205,17 @@ img {
 
 .icon-cart {
   fill: white;
+}
+
+.navigation-icon-cart {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../img/icons/cart.svg") 16px 16px;
+}
+
+.navigation-icon-full {
+  background: url("../img/icons/cart-full.svg") 16px 16px;
 }
 
 .bread-crumbs {
@@ -1174,4 +1190,231 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.popover {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  z-index: 2;
+  color: #242424;
+  box-sizing: border-box;
+  padding: 48px;
+  background: #FCFCFC;
+  border-radius: 4px;
+  box-shadow: 0 18px 40px rgba(79, 70, 60, 0.16);
+  display: none;
+}
+
+.popover-open {
+  display: block;
+}
+
+.popover-cart {
+  width: 441px;
+}
+
+.popover-cart-empty {
+  width: 320px;
+}
+
+.popover-search {
+  width: 356px;
+  padding: 24px 16px;
+}
+
+.popover-personal-area {
+  width: 420px;
+}
+
+.forms-popover-search {
+  width: 100%;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.popover-title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+}
+
+.popover-title-center {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.personal-area-form div {
+  display: grid;
+  grid-template-columns: 113px 1fr;
+  column-gap: 23px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.personal-area-form input {
+  margin-bottom: 16px;
+}
+
+.popover-personal-area p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.popover-personal-area a {
+  text-decoration: none;
+  color: #2D3440;
+  border-bottom: 1px solid #2D3440;
+}
+
+.cart-items-list {
+  display: flex;
+  row-gap: 24px;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-items-list p {
+  margin: 0;
+  padding: 0;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 46px 164px 80px 1fr;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.cart-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  overflow-wrap: anywhere;
+}
+
+.cart-item-scales {
+  font-size: 14px;
+  line-height: 20px;
+  color: #B9B9B9;
+}
+
+.item-title-scales {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.cart-item-button {
+  border: none;
+  background: none;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+}
+
+.cart-items-total>p,
+.cart-item-price {
+  font-size: 18px;
+  line-height: 22px;
+  color: #2D3440;
+  font-weight: 700;
+}
+
+.cart-item-price {
+  overflow-wrap: anywhere;
+}
+
+.cart-items-total>p {
+  margin-left: auto;
+}
+
+.cart-items-total {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 25px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #E7E7E7;
+  align-items: center;
+}
+
+.cart-items-total>button {
+  margin-right: auto;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
+  z-index: 3;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px;
+  background: #FCFCFC;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.modal-feedback {
+  width: 570px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 44px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../img/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 32px;
+}
+
+textarea {
+  height: 149px;
+  resize: none;
+  margin-bottom: 16px;
+}
+
+.form-feedback {
+  width: 100%;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback-form div {
+  align-self: flex-end;
 }
