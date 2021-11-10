@@ -82,14 +82,14 @@
             <span>2 товара</span>
           </a>
 
-          <div class="popover popover-cart popover-open">
+          <div class="popover popover-cart">
             <div class="popover-content">
               <h2 class="popover-title">Корзина</h2>
               <ul class="cart-items-list list-none">
                 <li class="cart-item">
                   <img src="img/product/raspberries.png" width="46" height="46" alt="Малинка">
                   <div class="item-title-scales">
-                    <p class="cart-item-title">Малинка</p>
+                    <p class="cart-item-title"> </p>
                     <p class="cart-item-scales">1 кг х 310 ₽</p>
                   </div>
                   <p class="cart-item-price">310 ₽</p>
@@ -130,7 +130,6 @@
     </header>
 
     <main class="main-index">
-
       <h1 class="visually-hidden">Каталог магазина мороженого</h1>
 
       <ul class="bread-crumbs list-none">
@@ -153,11 +152,31 @@
         </fieldset>
 
         <fieldset>
-          <legend>Цена: 100 ₽ – 500 ₽</legend>
-          <div>
-            <span></span>
-            <span></span>
+          <legend class="visually-hidden">Цена</legend>
+
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 42px; width: 60px">
+                <button class="range-toggle toggle-min pointer">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max pointer">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="range-wrapper-inputs">
+              <label class="catalog-filter-label">
+                Цена:<input class="range-input" type="number" value="100" name="min-price"> ₽
+              </label>
+              <label class="catalog-filter-label">
+                <span>–</span>
+              <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
+              </label>
+            </div>
           </div>
+
         </fieldset>
 
         <fieldset>

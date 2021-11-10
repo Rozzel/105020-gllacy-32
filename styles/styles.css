@@ -877,6 +877,7 @@ img {
   cursor: pointer;
 }
 
+/* spinner */
 .loader {
   display: inline-block;
   transform: translate(0, 4px) rotate(45deg);
@@ -892,7 +893,7 @@ img {
 
 .loader-white {
   border: 2px solid rgba(252, 252, 252, 0.24);
-  border-top: 2px solid #FCFCFC;
+  border-top: 2px solid #ad9494;
 }
 
 .button-pagination:focus {
@@ -1399,7 +1400,7 @@ img {
   margin-bottom: 32px;
 }
 
-textarea {
+.feedback-textarea {
   height: 149px;
   resize: none;
   margin-bottom: 16px;
@@ -1418,3 +1419,99 @@ textarea {
 .feedback-form div {
   align-self: flex-end;
 }
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: rgba(86, 92, 102, 0.3);
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #565C66;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #FCFCFC;
+  outline: 8px solid #2D3440;
+  outline-offset: -6px;
+  border-radius: 50%;
+}
+
+.range-toggle:hover {
+  background-color: #2D3440;
+  outline: 8px solid #FCFCFC;
+}
+
+.range-toggle:active {
+  background-color: #2D3440;
+}
+
+.range-toggle:focus {
+    outline: 6px solid #FCFCFC;
+    outline-offset: -6px;
+    background-color: #2D3440;
+}
+
+.toggle-min {
+  top: -6px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -6px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* .catalog-filter-group {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+} */
+
+/* .control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+} */
+
+/* .control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #242424;
+} */
