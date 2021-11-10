@@ -757,15 +757,18 @@ img {
   position: relative;
 }
 
-.form-info::after {
-  content: "";
+.info {
+  position: absolute;
   width: 16px;
   height: 16px;
-  position: absolute;
-  background: url("../img/icons/info.svg") no-repeat;
-  right: auto;
-  top: 0px;
-  transform: translate(5px, 0);
+  margin-top: 2px;
+  margin-left: 5px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  background: url("../img/icons/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .delivery-form>p:first-child {
@@ -1420,16 +1423,27 @@ img {
   align-self: flex-end;
 }
 
+.fieldset-filter {
+  background-color:rgba(252, 252, 252, 0.3);
+  border: none;
+  border-radius: 20px;
+  padding: 0 16px;
+}
+
+.range {
+  position: relative;
+}
+
 .range-scale {
   position: relative;
-  height: 4px;
-  margin-bottom: 16px;
+  top: 25px;
+  height: 2px;
   background-color: rgba(86, 92, 102, 0.3);
   border-radius: 2px;
 }
 
 .range-bar {
-  position: absolute;
+  position: relative;
   height: 4px;
   background-color: #565C66;
 }
@@ -1470,6 +1484,8 @@ img {
 }
 
 .range-wrapper-inputs {
+  position: absolute;
+  top: -50px;
   display: flex;
   justify-content: center;
 }
