@@ -424,7 +424,9 @@
           </div>
         </div>
       </div>
+
       <div class="section-delivery">
+
         <section class="delivery">
           <h2>Доставка любимого мороженого на дом</h2>
           <h3>
@@ -438,7 +440,10 @@
           <p class="field-group">
             <span>
               <label for="delivery-form-date">Дата</label>
-              <button class="info pointer" type="button"><span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+              <button class="info pointer" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                <span class="tooltip">Укажите желаемую дату</span>
+              </button>
             </span>
             <input class="forms" type="text" name="date" id="delivery-form-date" placeholder="01.04.2020">
           </p>
@@ -447,7 +452,13 @@
             <input class="forms" type="tel" name="tel" id="delivery-form-tel" placeholder="+7 800 999-00-00">
           </p>
           <p class="field-group">
-            <span><label for="delivery-form-address">Адрес</label></span>
+            <span>
+              <label for="delivery-form-address">Адрес</label>
+              <button class="info pointer" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                <span class="tooltip tooltip-off">Введите название улицы, дома и квартиры</span>
+              </button>
+            </span>
             <input class="forms" type="text" name="address" id="delivery-form-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
           <button type="submit" class="button button-bright focus">Отправить <div class="loader loader-black"></div></button>
