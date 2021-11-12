@@ -144,15 +144,17 @@
 
         <fieldset class="fieldset-filter">
           <legend>Сортировка:</legend>
-          <select name="sorting">
-            <option value="popular">по пулярности</option>
-            <option value="cheap">сначала дешёвое</option>
-            <option value="expensive">сначала дорогое</option>
-          </select>
+          <div class="wrapper-filter">
+            <select name="sorting" class="sorting">
+              <option value="popular">по пулярности</option>
+              <option value="cheap">сначала дешёвое</option>
+              <option value="expensive">сначала дорогое</option>
+            </select>
+          </div>
         </fieldset>
 
-        <fieldset class="fieldset-filter">
-          <legend class="visually-hidden">Цена</legend>
+        <fieldset class="fieldset-filter fieldset-filter-price">
+          <legend class="visually-hidden">Цена:</legend>
 
           <div class="range">
 
@@ -162,18 +164,20 @@
               </label>
               <label class="catalog-filter-label">
                 <span>–</span>
-              <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
+                <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
               </label>
             </div>
 
-            <div class="range-scale">
-              <div class="range-bar" style="left: 42px; width: 60px">
-                <button class="range-toggle toggle-min pointer">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range-toggle toggle-max pointer">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
+            <div class="wrapper-filter wrapper-filter-price">
+              <div class="range-scale">
+                <div class="range-bar" style="left: 30px; width: 80px">
+                  <button class="range-toggle toggle-min pointer">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max pointer">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -183,70 +187,75 @@
 
         <fieldset class="fieldset-filter">
           <legend>Жирность:</legend>
-          <ul class="catalog-filter-list list-none">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input type="radio" name="fatness" class="control-input" value="0%">
-                <span class="control-mark">0%</span>
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input type="radio" name="fatness" class="control-input" value="10%">
-                <span class="control-mark">до 10%</span>
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input type="radio" name="fatness" class="control-input" value="30%">
-                <span class="control-mark">до 30%</span>
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input type="radio" name="fatness" class="control-input" value="Above 30%">
-                <span class="control-mark">выше 30%</span>
-              </label>
-            </li>
-          </ul>
+          <div class="wrapper-filter">
+            <ul class="catalog-filter-list list-none">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="radio" name="fatness" class="control-input" value="0%">
+                  <span class="control-mark"></span>
+                  <span class="control-label">0%</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="radio" name="fatness" class="control-input" value="10%">
+                  <span class="control-label">до 10%</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="radio" name="fatness" class="control-input" value="30%">
+                  <span class="control-label">до 30%</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="radio" name="fatness" class="control-input" value="Above 30%">
+                  <span class="control-label">выше 30%</span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
 
         <fieldset class="fieldset-filter">
           <legend>Наполнители:</legend>
-          <ul class="catalog-filter-list list-none">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input type="checkbox" name="chocolate" value="chocolate" checked>
-                <span class="control-mark">шоколадные</span>
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input type="checkbox" name="fillers" value="sugar" checked>
-                <span class="control-mark">сахарные присыпки</span>
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input type="checkbox" name="fillers" value="fruits">
-                <span class="control-mark">фрукты</span>
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input type="checkbox" name="fillers" value="syrups">
-                <span class="control-mark">сиропы</span>
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input type="checkbox" name="fillers" value="jams">
-                <span class="control-mark">джемы</span>
-              </label>
-            </li>
-          </ul>
+          <div class="wrapper-filter">
+            <ul class="catalog-filter-list list-none">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="checkbox" name="chocolate" value="chocolate" checked>
+                  <span class="control-label">шоколадные</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="checkbox" name="fillers" value="sugar" checked>
+                  <span class="control-label">сахарные присыпки</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="checkbox" name="fillers" value="fruits">
+                  <span class="control-label">фрукты</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="checkbox" name="fillers" value="syrups">
+                  <span class="control-label">сиропы</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="checkbox" name="fillers" value="jams">
+                  <span class="control-label">джемы</span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <button class="button button-slight focus pointer" type="submit">Применить</button>
+        <button class="button button-slight button-filter focus pointer" type="submit">Применить</button>
       </form>
 
       <ul class="showcase-list list-none">
