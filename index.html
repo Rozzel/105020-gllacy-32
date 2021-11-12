@@ -438,31 +438,32 @@
         <form action="https://echo.htmlacademy.ru/" method="POST" class="delivery-form forms-states">
           <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <p class="field-group">
-            <span>
+            <span class="field-group-data">
               <label for="delivery-form-date">Дата</label>
               <button class="info pointer" type="button">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                <span class="tooltip">Укажите желаемую дату</span>
               </button>
+              <span class="tooltip tooltip-date">Укажите желаемую дату</span>
             </span>
             <input class="forms" type="text" name="date" id="delivery-form-date" placeholder="01.04.2020">
           </p>
           <p class="field-group">
-            <span><label for="delivery-form-tel">Телефон</label></span>
+            <span class="field-group-data"><label for="delivery-form-tel">Телефон</label></span>
             <input class="forms" type="tel" name="tel" id="delivery-form-tel" placeholder="+7 800 999-00-00">
           </p>
           <p class="field-group">
-            <span>
+            <span class="field-group-data">
               <label for="delivery-form-address">Адрес</label>
               <button class="info pointer" type="button">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                <span class="tooltip tooltip-off">Введите название улицы, дома и квартиры</span>
               </button>
+              <span class="tooltip tooltip-address tooltip-off">Введите название улицы, дома и квартиры</span>
             </span>
             <input class="forms" type="text" name="address" id="delivery-form-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
           <button type="submit" class="button button-bright focus">Отправить <div class="loader loader-black"></div></button>
         </form>
+
       </div>
 
       <section class="address">

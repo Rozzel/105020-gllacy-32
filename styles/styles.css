@@ -791,7 +791,7 @@ img {
 .tooltip {
   position: absolute;
   top: -14px;
-  left: 30px;
+  left: 0px;
   width: 162px;
   min-height: 25px;
   background: #FCFCFC;
@@ -804,6 +804,14 @@ img {
   border: 1px solid #adadad;
   z-index: 5;
   text-align: left;
+}
+
+.tooltip-date {
+  left: 73px;
+}
+
+.tooltip-address {
+  left: 85px;
 }
 
 .tooltip-off {
@@ -851,7 +859,7 @@ img {
   margin-top: 12px;
 }
 
-.field-group>span {
+.field-group-data {
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 16px;
