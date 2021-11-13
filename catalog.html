@@ -144,13 +144,11 @@
 
         <fieldset class="fieldset-filter">
           <legend>Сортировка:</legend>
-          <div class="wrapper-filter">
-            <select name="sorting" class="sorting">
+            <select name="sorting" class="wrapper-filter sorting pointer">
               <option value="popular">по пулярности</option>
               <option value="cheap">сначала дешёвое</option>
               <option value="expensive">сначала дорогое</option>
             </select>
-          </div>
         </fieldset>
 
         <fieldset class="fieldset-filter fieldset-filter-price">
@@ -191,26 +189,29 @@
             <ul class="catalog-filter-list list-none">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" name="fatness" class="control-input" value="0%">
+                  <input type="radio" name="fatness" class="visually-hidden control-input" value="0%">
                   <span class="control-mark"></span>
                   <span class="control-label">0%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" name="fatness" class="control-input" value="10%">
+                  <input type="radio" name="fatness" class="visually-hidden control-input" value="10%">
+                  <span class="control-mark"></span>
                   <span class="control-label">до 10%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" name="fatness" class="control-input" value="30%">
+                  <input type="radio" name="fatness" class="visually-hidden control-input" value="30%">
+                  <span class="control-mark"></span>
                   <span class="control-label">до 30%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" name="fatness" class="control-input" value="Above 30%">
+                  <input type="radio" name="fatness" class="visually-hidden control-input" value="Above 30%">
+                  <span class="control-mark"></span>
                   <span class="control-label">выше 30%</span>
                 </label>
               </li>
@@ -224,38 +225,43 @@
             <ul class="catalog-filter-list list-none">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="checkbox" name="chocolate" value="chocolate" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="chocolate" value="chocolate" checked>
+                  <span class="control-mark"></span>
                   <span class="control-label">шоколадные</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="checkbox" name="fillers" value="sugar" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="fillers" value="sugar" checked>
+                  <span class="control-mark"></span>
                   <span class="control-label">сахарные присыпки</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="checkbox" name="fillers" value="fruits">
+                  <input class="visually-hidden control-input" type="checkbox" name="fillers" value="fruits">
+                  <span class="control-mark"></span>
                   <span class="control-label">фрукты</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="checkbox" name="fillers" value="syrups">
+                  <input class="visually-hidden control-input" type="checkbox" name="fillers" value="syrups">
+                  <span class="control-mark"></span>
                   <span class="control-label">сиропы</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="checkbox" name="fillers" value="jams">
+                  <input class="visually-hidden control-input" type="checkbox" name="fillers" value="jams">
+                  <span class="control-mark"></span>
                   <span class="control-label">джемы</span>
                 </label>
               </li>
             </ul>
           </div>
         </fieldset>
-        <button class="button button-slight button-filter focus pointer" type="submit">Применить</button>
+        <div class="wrapper-button-filter"><button class="button button-slight button-filter focus pointer" type="submit">Применить</button></div>
       </form>
 
       <ul class="showcase-list list-none">
@@ -430,7 +436,7 @@
       </ul>
 
       <div class="show-more">
-        <button type="button" class="button button-light focus pointer">Показать еще</button>
+        <button type="button" class="button button-light focus pointer">Показать ещё</button>
         <div>
           <a class="arrow arrow-left focus">
             <svg width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
