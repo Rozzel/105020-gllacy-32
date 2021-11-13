@@ -94,10 +94,7 @@
                     <p class="cart-item-scales">1 кг х 310 ₽</p>
                   </div>
                   <p class="cart-item-price">310 ₽</p>
-                  <button type="submit" class="cart-item-button focus pointer">
-                    <img src="img/icons/cross.svg" width="19" height="19" alt="Малинка">
-                    <span class="visually-hidden">Удалить из корзины</span>
-                  </button>
+                  <button type="submit" class="cart-item-button focus pointer" aria-label="Удалить из корзины"></button>
                 </li>
                 <li class="cart-item">
                   <img src="img/product/bubble-gum.png" width="46" height="46" alt="Малинка">
@@ -106,10 +103,7 @@
                     <p class="cart-item-scales">1,5 кг х 320 ₽</p>
                   </div>
                   <p class="cart-item-price">480 ₽</p>
-                  <button type="button" class="cart-item-button focus pointer">
-                    <img src="img/icons/cross.svg" width="19" height="19" alt="Малинка">
-                    <span class="visually-hidden">Удалить из корзины</span>
-                  </button>
+                  <button type="button" class="cart-item-button focus pointer" aria-label="Удалить из корзины"></button>
                 </li>
               </ul>
               <div class="cart-items-total">
@@ -119,7 +113,7 @@
             </div>
           </div>
 
-          <div class="popover popover-cart-empty popover-open">
+          <div class="popover popover-cart-empty">
             <div class="popover-content">
               <h2 class="popover-title popover-title-center">Ваша корзина<br> пока пуста</h2>
             </div>
@@ -482,7 +476,7 @@
               <button class="info pointer" type="button">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
-              <span class="tooltip tooltip-date">Укажите желаемую дату</span>
+              <span class="tooltip tooltip-date tooltip-off">Укажите желаемую дату</span>
             </span>
             <input class="forms" type="text" name="date" id="delivery-form-date" placeholder="01.04.2020">
           </p>
@@ -500,7 +494,7 @@
             </span>
             <input class="forms" type="text" name="address" id="delivery-form-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
-          <button type="submit" class="button button-bright focus">Отправить <span class="loader loader-black"></span></button>
+          <button type="submit" class="button button-bright focus">Отправить <span class="loader loader-black visually-hidden"></span></button>
         </form>
 
       </div>
@@ -580,7 +574,7 @@
             <label class="visually-hidden" for="feedback-form-comment">Комментарий</label>
             <textarea class="forms form-feedback feedback-textarea" id="feedback-form-comment" name="feedback-form-comment" placeholder="В свободной форме"></textarea>
 
-            <div><button type="submit" class="button button-bright focus pointer">Отправить</button></div>
+            <button type="submit" class="button button-bright focus pointer">Отправить</button>
 
           </form>
 

@@ -82,31 +82,28 @@
             <span>2 товара</span>
           </a>
 
-          <div class="popover popover-cart">
-            <div class="popover-content">
+          <div class="popover popover-cart popover-open">
               <h2 class="popover-title">Корзина</h2>
               <ul class="cart-items-list list-none">
                 <li class="cart-item">
                   <img src="img/product/raspberries.png" width="46" height="46" alt="Малинка">
                   <div class="item-title-scales">
-                    <p class="cart-item-title"> </p>
+                    <p class="cart-item-title">Малинка</p>
                     <p class="cart-item-scales">1 кг х 310 ₽</p>
                   </div>
                   <p class="cart-item-price">310 ₽</p>
                   <button type="button" class="cart-item-button focus pointer">
-                    <img src="img/icons/cross.svg" width="19" height="19" alt="Малинка">
                     <span class="visually-hidden">Удалить из корзины</span>
                   </button>
                 </li>
                 <li class="cart-item">
-                  <img src="img/product/bubble-gum.png" width="46" height="46" alt="Малинка">
+                  <img src="img/product/bubble-gum.png" width="46" height="46" alt="Бабл-гам">
                   <div class="item-title-scales">
                     <p class="cart-item-title">Бабл-гам</p>
                     <p class="cart-item-scales">1,5 кг х 320 ₽</p>
                   </div>
                   <p class="cart-item-price">480 ₽</p>
                   <button type="button" class="cart-item-button focus pointer">
-                    <img src="img/icons/cross.svg" width="19" height="19" alt="Малинка">
                     <span class="visually-hidden">Удалить из корзины</span>
                   </button>
                 </li>
@@ -115,7 +112,6 @@
                 <button type="button" class="button button-bright focus pointer">Оформить заказ</button>
                 <p>Итого: 790 ₽</p>
               </div>
-            </div>
           </div>
 
           <div class="popover popover-cart-empty">
@@ -158,23 +154,19 @@
 
             <div class="range-wrapper-inputs">
               <label class="catalog-filter-label">
-                Цена:<input class="range-input" type="number" value="100" name="min-price"> ₽
+                Цена:<input class="range-input" type="text" value="100" name="min-price"> ₽
               </label>
               <label class="catalog-filter-label">
                 <span>–</span>
-                <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
+                <input class="range-input" type="text" value="500" name="max-price" style="width: 37px"> ₽
               </label>
             </div>
 
             <div class="wrapper-filter wrapper-filter-price">
               <div class="range-scale">
-                <div class="range-bar" style="left: 30px; width: 80px">
-                  <button class="range-toggle toggle-min pointer">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <button class="range-toggle toggle-max pointer">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
+                <div class="range-bar range-bar-options">
+                  <button class="range-toggle toggle-min pointer" aria-label="Изменить минимальную цену"></button>
+                  <button class="range-toggle toggle-max pointer" aria-label="Изменить максимальную цену"></button>
                 </div>
               </div>
             </div>
