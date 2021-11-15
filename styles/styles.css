@@ -1076,7 +1076,8 @@ img {
   display: flex;
   padding: 0;
   border-radius: 16px;
-  background: #FFFFFF url("../img/bg/mail-bg.png") no-repeat;
+  background: url("../img/bg/mail-bg.png") no-repeat, repeating-linear-gradient( 60deg,#FF2F64,  #6CABFF 0.6em, transparent 0.6em, transparent 1em);
+  background-color: #EDF1F5;
   padding: 5px;
   box-sizing: content-box;
   font-size: 16px;
@@ -1111,7 +1112,7 @@ img {
   min-height: 492px;
   padding: 0;
   border-radius: 16px;
-  background: #FFFFFF url("../img/bg/address-bg.jpg") no-repeat;
+  background: #EEE2E2 url("../img/bg/address-bg.jpg") no-repeat;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
