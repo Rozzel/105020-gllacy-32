@@ -14,7 +14,7 @@
 
     <header class="page-header">
 
-      <a class="logo"><img class="logo-img" src="img/logo.svg" width="137" height="56" alt="Логотип «Глейси Шоп»"></a>
+      <a class="logo"><img src="img/logo.svg" width="137" height="56" alt="Логотип «Глейси Шоп»"></a>
 
       <nav class="navigation">
         <ul class="navigation-list list-none">
@@ -31,7 +31,7 @@
         </li>
 
         <li class="navigation-item">
-          <a class="navigation-link link-user focus pointer" href="about.html">
+          <a class="navigation-link link-user focus pointer" href="#">
             <svg class="icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6634 7.33c0-2.5773 2.0893-4.6666 4.6667-4.6666 2.5773 0 4.6666 2.0893 4.6666 4.6667 0 1.2573-.4972 2.3984-1.3057 3.2375a.6833.6833 0 0 0-.1234.1235c-.8391.8085-1.9803 1.3056-3.2375 1.3056-2.5774 0-4.6667-2.0893-4.6667-4.6666Zm8.4118 4.688a5.9747 5.9747 0 0 1-3.7451 1.3121c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6a5.9745 5.9745 0 0 1-1.3121 3.7451l2.4501 2.4501a.6667.6667 0 1 1-.9428.9429l-2.4501-2.4502Z" fill="#2D3440" />
             </svg>
@@ -81,7 +81,7 @@
         <li class="navigation-item">
           <a class="navigation-link link-user focus pointer" href="#">
             <div class="icon navigation-icon-cart"></div>
-            <span>Корзина</span>
+            <span aria-label="Корзина">Пусто</span>
           </a>
 
           <div class="popover popover-cart">
@@ -135,12 +135,13 @@
             <div class="slide-item-left">
               <h3 class="slide-heading text-bold">Нежный пломбир<br> с клубничным джемом</h3>
               <p class="slide-description">
-                Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+                Натуральное мороженое из свежих сливок<br> и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
               </p>
               <a href="#" class="button button-light focus">Заказать</a>
             </div>
             <div class="slide-item-right">
               <div class="slider-wrapper">
+
                 <img class="slide-img" src="img/slider/big-strawberry.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
                 <div class="circle circle-big"></div>
 
@@ -161,13 +162,13 @@
                 </div>
               </div>
 
-              <div class="slider-wrapper">
+              <div class="slider-wrapper slider-wrapper-small">
                 <div>
                   <img src="img/slider/small-banana.png" width="66" height="150" alt="Мороженое" class="slide-img-small">
                   <div class="circle circle-small"></div>
                 </div>
               </div>
-              <div class="slider-wrapper">
+              <div class="slider-wrapper slider-wrapper-small">
                 <div>
                   <img src="img/slider/small-marshmallows.png" width="66" height="150" alt="Мороженое" class="slide-img-small">
                   <div class="circle circle-small"></div>
@@ -289,8 +290,8 @@
           </li>
         </ol>
 
-        <ul class="slide-social">
-          <li class="slide-social-item list-none">
+        <ul class="slide-social list-none">
+          <li>
             <a class="social-link focus" href="#">
               <svg width="32" height="32" class="social-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8c0 4.4183-3.5817 8-8 8s-8-3.5817-8-8 3.5817-8 8-8 8 3.5817 8 8ZM8.3923 9.9832H7.914s-1.0551.0557-1.9842-.792c-1.0133-.9248-1.9082-2.7599-1.9082-2.7599S3.97 6.311 4.026 6.253c.063-.0654.2346-.0696.2346-.0696l1.143-.0066s.1078.0158.185.0654c.0635.041.099.1175.099.1175s.1848.4095.4295.78c.4775.7232.7.8814.8621.8039.2362-.113.1654-1.0224.1654-1.0224s.0044-.3301-.1189-.477c-.0955-.114-.2755-.1472-.355-.1566-.0643-.0075.0412-.1384.178-.1971.2058-.0884.569-.0934.9983-.0895.3344.003.4306.0212.5614.049.3033.0641.2939.2699.2735.7137a9.6974 9.6974 0 0 0-.0132.4643c0 .04-.0013.0826-.0027.1264-.0071.2274-.0152.4876.1555.5843.0875.0495.3017.0075.8373-.7897.254-.3778.4443-.822.4443-.822s.0416-.0793.1063-.1132c.0661-.0347.1553-.024.1553-.024l1.2029-.0066s.3614-.0378.42.1052c.0613.15-.1351.5006-.6266 1.0746-.4635.5415-.6904.7429-.6725.9195.0132.1308.1607.248.4457.48.5922.4817.75.7346.7875.7947a.3258.3258 0 0 0 .0069.0108c.265.3852-.2939.4154-.2939.4154l-1.0683.013s-.2296.0399-.5318-.142c-.158-.095-.3125-.2503-.4597-.3982-.225-.226-.4329-.435-.6104-.3857-.2978.0828-.2884.6452-.2884.6452s.0021.1201-.0657.184c-.0738.0698-.2182.0837-.2182.0837Z" />
@@ -298,7 +299,7 @@
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="slide-social-item list-none">
+          <li>
             <a class="social-link focus" href="#">
               <svg width="32" height="32" class="social-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8c0 4.4183-3.5817 8-8 8s-8-3.5817-8-8 3.5817-8 8-8 8 3.5817 8 8Zm-6.381.6h-.9523V12H7.1429V8.6H6V7h1.1429V5.88c0-1.2172.7344-1.88 1.7687-1.88.4953 0 .9642.0388 1.0884.056V5.4h-.5714c-.762 0-.762.388-.762.8V7H10l-.381 1.6Z" />
@@ -306,7 +307,7 @@
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
-          <li class="slide-social-item list-none">
+          <li>
             <a class="social-link focus" href="#">
               <svg width="32" height="32" class="social-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8c0 4.4183-3.5817 8-8 8s-8-3.5817-8-8 3.5817-8 8-8 8 3.5817 8 8ZM9.6488 4.024C9.2224 4.004 9.0868 4 8 4s-1.2224.0052-1.6488.024c-.4264.02-.716.0868-.9712.186a1.9587 1.9587 0 0 0-.7088.4612A1.952 1.952 0 0 0 4.21 5.38c-.0992.2552-.166.5448-.186.9712C4.004 6.7776 4 6.9132 4 8s.0052 1.2224.024 1.6488c.02.426.0868.7164.186.9712.1004.267.2578.5089.4612.7088.1998.2036.4417.361.7088.4612.2552.0988.5452.166.9712.186.4264.02.562.024 1.6488.024s1.2224-.0052 1.6488-.024c.426-.02.7164-.0872.9712-.186a1.9664 1.9664 0 0 0 .7088-.4612 1.954 1.954 0 0 0 .4612-.7088c.0988-.2552.166-.5452.186-.9712.02-.4264.024-.562.024-1.6488s-.0052-1.2224-.024-1.6488c-.02-.426-.0872-.7164-.186-.9712a1.963 1.963 0 0 0-.4612-.7088c-.2224-.222-.4448-.3596-.7088-.4612-.2552-.0992-.5452-.166-.9712-.186Zm-3.063 2.5618A2 2 0 1 1 9.4142 9.414a2 2 0 0 1-2.8284-2.8283Zm3.8678-1.0393a.5002.5002 0 0 1 0 .707A.5002.5002 0 0 1 9.6 5.9a.5.5 0 0 1 .8536-.3536Zm-1.605 1.605a1.2 1.2 0 1 0-1.6971 1.697 1.2 1.2 0 0 0 1.697-1.697Z" />

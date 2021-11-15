@@ -84,6 +84,11 @@ img {
   object-fit: contain;
 }
 
+.logo {
+  width: 200px;
+  height: auto;
+}
+
 .list-none {
   list-style-type: none;
   margin: 0;
@@ -134,7 +139,11 @@ img {
 
 .navigation-user > .navigation-item:nth-child(1) {
   font-weight: 700;
-  margin-right: -10px;
+  margin-right: -7px;
+}
+
+.navigation-user > .navigation-item:nth-child(4) {
+  margin-left: 14px;
 }
 
 .navigation-user .navigation-item {
@@ -212,6 +221,8 @@ img {
 
 .navigation-user li:nth-child(2) > a {
   padding: 8px 10px;
+  margin-right: -7px;
+  margin-left: -10px;
 }
 
 .icon {
@@ -337,11 +348,13 @@ img {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 29px;
 }
 
 .slide-pagination {
   display: flex;
+  align-items: flex-end;
   margin: 0;
   padding: 0;
 }
@@ -353,6 +366,7 @@ img {
 .slide-social {
   justify-self: end;
   display: flex;
+  align-items: flex-end;
   gap: 16px;
 }
 
@@ -367,47 +381,57 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-right: 30px;
-  margin-left: 70px;
+  padding-top: 136px;
+  margin-left: -0.5px;
+  padding-left: 70.2px;
+
 }
 
 .slide-heading {
   font-size: 36px;
   line-height: 46px;
-  margin: 0 0 24px 0;
+  margin: 0;
   padding: 0;
+  margin-bottom: 7px;
   min-height: min-content;
   max-height: 150px;
   overflow: hidden;
   text-overflow: ellipsis;
+  letter-spacing: 0.48px;
 }
 
 .slide-description {
   font-size: 18px;
   line-height: 24px;
-  margin: 0 0 48px 0;
+  margin-bottom: 44px;
   padding: 0;
   max-width: 410px;
   max-height: 170px;
   overflow: auto;
 }
 
+.slide-description + .button {
+  margin-left: -3px;
+}
+
 .slide-item-right {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
   align-items: center;
+  justify-content: space-between;
+  padding: 18px 0 0 53px;
 }
 
 .slider-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.slider-wrapper:nth-child(2) {
-  margin-left: 85px;
-}
-
-.slider-wrapper:last-child {
-  margin-left: 90px;
+.slider-wrapper-small {
+  margin-top: 10px;
+  margin-right: 9px;
+  justify-content: end;
 }
 
 .slider-button-group {
@@ -482,15 +506,16 @@ img {
   width: 312px;
   height: 312px;
   background: rgba(252, 252, 252, 0.3);
-  top: 105px;
+  top: 104px;
+  left: 0;
 }
 
 .circle-small {
   width: 100px;
   height: 100px;
   background: rgba(255, 203, 216, 0.3);
-  top: 25px;
-  left: -15px;
+  top: 26px;
+  right: -15px;
 }
 
 .circle-wrapper {
