@@ -97,6 +97,9 @@ img {
 
 .main-index > h2 {
   margin: 0;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
 }
 
 .forms {
@@ -252,6 +255,7 @@ img {
   line-height: 20px;
   font-weight: 700;
   padding: 0;
+  margin-top: 31px;
   margin-bottom: 16px;
 }
 
@@ -260,6 +264,7 @@ img {
   text-decoration: none;
   padding: 2px 1px;
   border-bottom: 1px solid #2D3440;
+  margin-left: -3px;
 }
 
 .bread-crumbs a:not([href]) {
@@ -304,15 +309,15 @@ img {
   width: 810px;
   position: relative;
   display: grid;
-  column-gap: 15px;
-  row-gap: 10px;
+  column-gap: 18px;
+  row-gap: 22px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "f1 f2 f3 f3"
     "f4 f4 f4 f5";
   font-size: 14px;
   line-height: 20px;
-  margin-top: 40px;
+  margin-top: 42px;
   margin-bottom: 99px;
 }
 
@@ -1211,7 +1216,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     ". second third";
-  margin: 70px 0 93px 0;
+  margin: 50px 0 79px 0;
   padding: 0;
 }
 
@@ -1225,9 +1230,11 @@ img {
 .show-more div {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
   grid-area: third;
   margin-left: auto;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .show-more-list {
@@ -1238,7 +1245,8 @@ img {
 }
 
 .show-more-list li {
-  margin-left: 16px;
+  margin-left: 0px;
+  margin-right: -6px;
 }
 
 .show-more-list a {
@@ -1598,6 +1606,7 @@ img {
 
 .fieldset-filter > legend {
   margin-left: 16px;
+  margin-bottom: 3px;
 }
 
 .wrapper-filter {
