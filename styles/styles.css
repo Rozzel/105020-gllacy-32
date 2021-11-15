@@ -235,6 +235,7 @@ img {
 
 .bread-crumbs {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   font-size: 14px;
   line-height: 20px;
@@ -376,8 +377,10 @@ img {
   line-height: 46px;
   margin: 0 0 24px 0;
   padding: 0;
-  max-height: 160px;
+  min-height: min-content;
+  max-height: 150px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .slide-description {
@@ -615,14 +618,14 @@ img {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  width: 100%;
 }
 
 .section-present-list {
   display: grid;
   gap: 30px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(570px, 50%));
   padding: 0;
-
 }
 
 .section-present-item {
@@ -791,6 +794,9 @@ img {
   box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   width: 420px;
+  min-height: min-content;
+  max-height: 406px;
+  overflow: auto;
   font-size: 16px;
   line-height: 20px;
   padding: 40px;
@@ -905,6 +911,9 @@ img {
   border-radius: 26px;
   padding: 12px 32px;
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  min-height: min-content;
+  max-height: 52px;
+  overflow: hidden;
 }
 
 .button-filter {
@@ -1086,7 +1095,7 @@ img {
 
 .mail-container > p {
   margin: 0;
-  width: 506px;
+  min-width: 506px;
   height: 95px;
   overflow: auto;
 }
@@ -1113,10 +1122,13 @@ img {
   background: #FCFCFC;
   border-radius: 8px;
   width: 263px;
+  min-height: min-content;
+  max-height: 364px;
+  overflow: auto;
   padding: 40px;
   font-style: normal;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   font-size: 16px;
   line-height: 22px;
 }
@@ -1414,7 +1426,9 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  overflow-wrap: anywhere;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cart-item-scales {
@@ -1427,6 +1441,7 @@ img {
   display: flex;
   flex-direction: column;
   margin: 0;
+  text-overflow: ellipsis;
 }
 
 .cart-item-button {
