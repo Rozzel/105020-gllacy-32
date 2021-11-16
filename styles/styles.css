@@ -559,22 +559,17 @@ img {
   align-content: center;
 }
 
-.showcase-item > img {
-  position: absolute;
-  top: -56px;
-  left: 50px;
-}
-
 .showcase-img {
+  position: absolute;
+  top: -50px;
   align-self: center;
   width: 191px;
   height: auto;
-  transform: translate(-11px, 7px);
 }
 
 .showcase-item > h4 {
   margin: 0;
-  margin-top: 24px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
@@ -589,7 +584,6 @@ img {
   font-size: 16px;
   line-height: 22px;
   margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .showcase-item > div {
@@ -613,7 +607,6 @@ img {
   border-radius: 50%;
   width: 32px;
   height: 32px;
-  transform: translate(0px, -4.5px);
 }
 
 .button-cart:hover {
@@ -709,7 +702,7 @@ img {
   background: #EEE2C9 url("../img/bg/wafer-bg.png") no-repeat;
   border-radius: 16px;
   margin: 0;
-  margin-top: 80px;
+  margin-top: 75px;
   padding: 24px;
 }
 
@@ -717,7 +710,7 @@ img {
   background-color: #FCFCFC;
   border-radius: 16px;
   padding: 0;
-  padding: 52px 40px 56px 40px;
+  padding: 60px 40px 56px 40px;
 }
 
 .advantages-container h2 {
@@ -728,13 +721,13 @@ img {
   line-height: 46px;
   padding: 0;
   margin: 0;
-  margin-bottom: 59px;
+  margin-bottom: 55px;
 }
 
 .section-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 41px;
+  margin-left: 65px;
   gap: 40px 95px;
   font-weight: 400;
   font-size: 16px;
@@ -1201,7 +1194,7 @@ img {
 
 .page-footer {
   display: grid;
-  padding: 48px 0;
+  padding: 30px 0;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -1210,7 +1203,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     ". second third";
-  margin: 50px 0 79px 0;
+  margin: 55px 0 79px 0;
   padding: 0;
 }
 
@@ -1293,6 +1286,7 @@ img {
   margin: 0;
   flex-wrap: wrap;
   gap: 16px;
+  margin-top: 18px;
   margin-left: 5px;
 }
 
@@ -1304,6 +1298,7 @@ img {
   line-height: 20px;
   font-weight: 400;
   align-self: start;
+  margin-top: 19px;
   margin-left: 33px;
 }
 
@@ -1337,7 +1332,6 @@ img {
   flex-direction: column;
   justify-content: end;
   margin-left: auto;
-  transform: translate(-15px, -15px);
 }
 
 .footer-developer,
@@ -1355,6 +1349,11 @@ img {
 
 .footer-developer a {
   padding: 16px 0;
+}
+
+.footer-developer a,
+.footer-developer p {
+  margin-right: 7px;
 }
 
 .visually-hidden {
