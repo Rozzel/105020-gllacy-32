@@ -286,7 +286,7 @@ img {
 }
 
 .sorting {
-  width: 100%;
+  width: 196px;
   padding-left: 5px;
   background-color: rgba(252, 252, 252, 0.0);
   border: none;
@@ -308,9 +308,9 @@ img {
   width: 810px;
   position: relative;
   display: grid;
-  column-gap: 18px;
+  column-gap: 14px;
   row-gap: 22px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 196px 1fr 1fr 1fr;
   grid-template-areas:
     "f1 f2 f3 f3"
     "f4 f4 f4 f5";
@@ -342,7 +342,7 @@ img {
 
 .catalog-filter-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   gap: 12px;
   padding: 0;
@@ -957,8 +957,7 @@ img {
 
 .wrapper-button-filter {
   display: flex;
-  align-content: flex-end;
-  align-items: flex-end;
+  margin-top: 27px;
 }
 
 .button-slight {
@@ -1596,9 +1595,14 @@ img {
   padding: 0;
 }
 
-.fieldset-filter > legend {
+.fieldset-filter-price {
+  margin-left: 10px;
+}
+
+.fieldset-filter > legend,
+.range {
   margin-left: 16px;
-  margin-bottom: 3px;
+  margin-bottom: 7px;
 }
 
 .wrapper-filter {
@@ -1606,21 +1610,17 @@ img {
   position: relative;
   align-items: center;
   width: 100%;
-  height: 36px;
+  min-height: 36px;
   border-radius: 30px;
   background-color: rgba(252, 252, 252, 0.3);
-  padding: 0 16px;
+  padding: 3px 16px;
   margin: 0;
   box-sizing: border-box;
 }
 
 .wrapper-filter-price {
-  width: 196px;
+  width: 100%;
   padding: 0;
-}
-
-.range {
-  position: relative;
 }
 
 .range-scale {
@@ -1640,22 +1640,23 @@ img {
 
 .range-bar-options {
   left: 30px;
-  width: 80px;
+  width: 75px;
 }
 
 .range-toggle {
   position: absolute;
   width: 16px;
   height: 16px;
+  border: none;
   background-color: #FCFCFC;
-  outline: 8px solid #2D3440;
+  outline: 6px solid #2D3440;
   outline-offset: -6px;
   border-radius: 50%;
 }
 
 .range-toggle:hover {
   background-color: #2D3440;
-  outline: 8px solid #FCFCFC;
+  outline: 6.5px solid #FCFCFC;
 }
 
 .range-toggle:active {
@@ -1663,9 +1664,9 @@ img {
 }
 
 .range-toggle:focus {
-  outline: 6px solid #FCFCFC;
-  outline-offset: -5px;
   background-color: #2D3440;
+  outline: 4px solid #FCFCFC;
+  outline-offset: -5.5px;
 }
 
 .toggle-min {
@@ -1679,8 +1680,7 @@ img {
 }
 
 .range-wrapper-inputs {
-  display: flex;
-  margin-left: 16px;
+  display: flex
 }
 
 .catalog-filter-label {
