@@ -1752,7 +1752,7 @@ img {
   border: 2px solid #2D3440;
 }
 
-.control-input[type="radio"]:checked + .control-label::after, {
+.control-input[type="radio"]:checked + .control-label::after {
   position: absolute;
   top: 7px;
   left: 7px;
