@@ -474,17 +474,25 @@ img {
   fill: #2D3440;
 }
 
-.slide-icon,
 .social-icon {
   fill: #FCFCFC;
+  border-radius: 50%;
+  outline: 3px solid rgba(252, 252, 252, 0.6);
+  outline-offset: -2px;
 }
 
-.social-icon:hover {
-  fill: #2D3440;
+.social-link:hover .social-icon {
+  background-color: #2D3440;
+  transition: 1s;
+}
+
+.social-link:focus .social-icon {
+  background-color: #2D3440;
   transition: 1s;
 }
 
 .slide-icon {
+  fill: #FCFCFC;
   transform: translate(0, 2px);
 }
 
