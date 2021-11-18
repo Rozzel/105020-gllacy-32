@@ -707,7 +707,7 @@ img {
 }
 
 .advantages {
-  background: #EEE2C9 url("../img/bg/wafer-bg.png") no-repeat;
+  background: #EEE2C9 url("../img/bg/wafer-bg.png") repeat;
   border-radius: 16px;
   margin: 0;
   margin-top: 75px;
