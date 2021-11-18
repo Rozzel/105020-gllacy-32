@@ -153,19 +153,19 @@
 
             <div class="range range-wrapper-inputs">
               <label class="catalog-filter-label">
-                Цена:<input class="range-input" type="text" value="100" name="min-price"> ₽
+                Цена:<input class="range-input" type="text" value="100" name="min-price" tabindex="-1"> ₽
               </label>
               <label class="catalog-filter-label">
                 <span>–</span>
-                <input class="range-input" type="text" value="500" name="max-price"> ₽
+                <input class="range-input" type="text" value="500" name="max-price" tabindex="-1"> ₽
               </label>
             </div>
 
             <div class="wrapper-filter wrapper-filter-price">
               <div class="range-scale">
                 <div class="range-bar range-bar-options">
-                  <button class="range-toggle toggle-min pointer" aria-label="Изменить минимальную цену"></button>
-                  <button class="range-toggle toggle-max pointer" aria-label="Изменить максимальную цену"></button>
+                  <button type="button" class="range-toggle toggle-min pointer" aria-label="Изменить минимальную цену"></button>
+                  <button type="button" class="range-toggle toggle-max pointer" aria-label="Изменить максимальную цену"></button>
                 </div>
               </div>
             </div>
@@ -178,26 +178,26 @@
             <ul class="catalog-filter-list list-none">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" name="fatness" class="visually-hidden control-input" value="0%">
-                  <span class="control-label">0%</span>
+                  <input type="radio" name="fatness" class="visually-hidden control-input" value="0%" tabindex="-1">
+                  <span class="control-label" tabindex="0">0%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" name="fatness" class="visually-hidden control-input" value="10%">
-                  <span class="control-label">до 10%</span>
+                  <input type="radio" name="fatness" class="visually-hidden control-input" value="10%" tabindex="-1">
+                  <span class="control-label" tabindex="0">до 10%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" name="fatness" class="visually-hidden control-input" value="30%">
-                  <span class="control-label">до 30%</span>
+                  <input type="radio" name="fatness" class="visually-hidden control-input" value="30%" tabindex="-1">
+                  <span class="control-label" tabindex="0">до 30%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input type="radio" name="fatness" class="visually-hidden control-input" value="Above 30%">
-                  <span class="control-label">выше 30%</span>
+                  <input type="radio" name="fatness" class="visually-hidden control-input" value="Above 30%" tabindex="-1">
+                  <span class="control-label" tabindex="0">выше 30%</span>
                 </label>
               </li>
             </ul>

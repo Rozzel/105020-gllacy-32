@@ -237,7 +237,7 @@ img {
 }
 
 .icon-cart {
-  fill: white;
+  fill: #FFFFFF;
 }
 
 .navigation-icon-cart {
@@ -306,7 +306,7 @@ img {
 }
 
 .wrapper-filter:focus {
-  outline: 2px solid white;
+  outline: 2px solid #FFFFFF;
 }
 
 .sorting-filter {
@@ -1752,7 +1752,7 @@ img {
   border: 2px solid #2D3440;
 }
 
-.control-input[type="radio"]:checked + .control-label::after {
+.control-input[type="radio"]:checked + .control-label::after, {
   position: absolute;
   top: 7px;
   left: 7px;
@@ -1764,11 +1764,11 @@ img {
 }
 
 .control-input[type="radio"]:hover + .control-label::before {
-  border: 2px solid white;
+  border: 2px solid #FFFFFF;
 }
 
 .control-input[type="radio"]:checked:hover + .control-label::after {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .control-input[type="radio"]:disabled + .control-label::before {
@@ -1813,3 +1813,22 @@ img {
 .control-input[type="checkbox"]:checked:disabled + .control-label::after {
   background: url(../img/icons/checkbox-checked-disabled.svg) no-repeat;
 }
+
+.control-label[tabindex="0"]:focus {
+  outline: none;
+}
+
+.control-label[tabindex="0"]:focus::before {
+  border: 2px solid #FFFFFF;
+}
+
+.control-input[type="checkbox"]:focus + .control-label::before {
+  background: url(../img/icons/checkbox-hover.svg) no-repeat;
+}
+
+.control-input[type="checkbox"]:checked:focus + .control-label::after {
+  background: url(../img/icons/checkbox-checked-hover.svg) no-repeat;
+}
+
+
+
