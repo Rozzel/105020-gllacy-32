@@ -174,7 +174,8 @@ img {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
-.forms-states input:hover {
+.forms-states input:hover,
+.forms-states input[required]:hover {
   outline: 1px solid #2D3440;
   outline-offset: -1px;
 }
@@ -189,13 +190,8 @@ img {
   outline-offset: -1px;
 }
 
-.forms-states input[required]:invalid {
+.forms-states input[required] {
   outline: 1px solid #B9B9B9;
-  outline-offset: -1px;
-}
-
-.forms-states input[required]:hover {
-  outline: 1px solid #2D3440;
   outline-offset: -1px;
 }
 
@@ -406,10 +402,6 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 7px;
-  min-height: min-content;
-  max-height: 150px;
-  overflow: hidden;
-  text-overflow: ellipsis;
   letter-spacing: 0.48px;
 }
 
@@ -419,8 +411,6 @@ img {
   margin-bottom: 44px;
   padding: 0;
   max-width: 410px;
-  max-height: 170px;
-  overflow: auto;
 }
 
 .slide-description + .button {
@@ -579,7 +569,7 @@ img {
 
 .showcase-item > h4 {
   margin: 0;
-  margin-top: 25px;
+  margin-top: 24px;
   margin-bottom: 10px;
 }
 
@@ -835,6 +825,9 @@ img {
   margin-top: 64px;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+  column-gap: 16px;
+  row-gap: 20px;
   background: #FCFCFC;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
@@ -842,23 +835,30 @@ img {
   font-size: 16px;
   line-height: 20px;
   padding: 40px;
+  margin-bottom: auto;
 }
 
 .delivery-form > p:nth-child(1) {
   line-height: 22px;
-
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .delivery-form > p:nth-child(2) {
   width: 117px;
-  margin-right: 16px;
+}
+
+.delivery-form > p:nth-child(3) {
+  width: 287px;
 }
 
 .delivery-form > p:nth-child(4) {
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 .delivery-form > p:nth-child(5) {
-  align-items:center
+  margin: auto;
 }
 
 .info {
@@ -933,12 +933,9 @@ img {
   position: relative;
   margin: 0;
   padding: 0;
-  flex-grow: 0;
 }
 
 .field-group-data {
-  display: flex;
-  gap: 5px;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 16px;
@@ -955,8 +952,6 @@ img {
   border-radius: 26px;
   padding: 12px 32px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  min-height: min-content;
-  max-height: 52px;
   overflow: hidden;
 }
 
@@ -1081,21 +1076,20 @@ img {
 
 .blog-mail {
   margin-top: 81px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 216px;
+  display: flex;
   gap: 30px;
 }
 
 .section-blog {
-  padding: 32px 235px 65px 32px;
+  padding: 32px 235px 18px 32px;
   border-radius: 16px;
-  background: #FFFFFF url("../img/bg/news.jpg") no-repeat;
+  min-height: 168px;
+  background: #FEFEFE url("../img/bg/news.jpg") no-repeat;
+  margin-bottom: auto;
 }
 
 .wrapper-blog {
   width: 303px;
-  height: 150px;
   overflow: hidden;
 }
 
@@ -1125,6 +1119,7 @@ img {
   box-sizing: content-box;
   font-size: 16px;
   line-height: 22px;
+  margin-bottom: auto;
 }
 
 .mail-container {
@@ -1135,13 +1130,13 @@ img {
   border-radius: 16px;
   padding: 26px;
   color: #565C66;
+  margin-bottom: auto;
 }
 
 .mail-container > p {
   margin: 0;
   min-width: 506px;
-  height: 95px;
-  overflow: auto;
+  margin-bottom: 42px;
 }
 
 .subscribe-form {
@@ -1151,23 +1146,23 @@ img {
 }
 
 .address {
-  margin-top: 80px;
+  margin-top: 78px;
   min-height: 492px;
   padding: 0;
   border-radius: 16px;
-  background: #EEE2E2 url("../img/bg/address-bg.jpg") no-repeat;
+  background: #E3C0C4 url("../img/bg/address-bg.jpg") no-repeat;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 .section-address {
   margin-left: 64px;
+  margin-top: 64px;
+  margin-bottom: 64px;
   background: #FCFCFC;
   border-radius: 8px;
   width: 263px;
   min-height: min-content;
-  max-height: 364px;
   overflow: auto;
   padding: 40px;
   font-style: normal;
@@ -1207,7 +1202,7 @@ img {
 
 .page-footer {
   display: grid;
-  padding: 30px 0;
+  padding: 24px 0;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -1216,7 +1211,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     ". second third";
-  margin: 55px 0 79px 0;
+  margin: 58px 0 81px 0;
   padding: 0;
 }
 
@@ -1312,7 +1307,7 @@ img {
   font-weight: 400;
   align-self: start;
   margin-top: 19px;
-  margin-left: 33px;
+  margin-left: 32px;
 }
 
 .footer-info li:first-child {
