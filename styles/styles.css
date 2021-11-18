@@ -189,6 +189,16 @@ img {
   outline-offset: -1px;
 }
 
+.forms-states input[required]:invalid {
+  outline: 1px solid #B9B9B9;
+  outline-offset: -1px;
+}
+
+.forms-states input[required]:hover {
+  outline: 1px solid #2D3440;
+  outline-offset: -1px;
+}
+
 .forms-states input:disabled {
   background: #E7E7E7;
   border: 1px solid #B9B9B9;
