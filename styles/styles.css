@@ -78,17 +78,6 @@ body {
   margin: 0 auto;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.logo {
-  width: 200px;
-  height: auto;
-}
-
 .list-none {
   list-style-type: none;
   margin: 0;
@@ -119,7 +108,7 @@ img {
 .page-header {
   min-height: 104px;
   display: grid;
-  grid-template-columns: 120px 1fr 508px;
+  grid-template-columns: 137px 1fr 508px;
   align-items: center;
   gap: 32px;
 }
@@ -790,15 +779,15 @@ img {
 .section-delivery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 80px;
+  margin-top: 78px;
   border-radius: 16px;
   background-color: #FFFFFF;
   background-image:
     url("../img/bg/delivery-bg.jpg"),
     url("../img/bg/delivery-bg-r.jpg");
   background-repeat: no-repeat, repeat;
-  min-height: 534px;
-  padding: 0;
+  min-height: 470px;
+  padding-bottom: 62px;
 }
 
 .delivery {
@@ -824,7 +813,6 @@ img {
   font-size: 16px;
   line-height: 22px;
   margin-top: 24px;
-  margin-bottom: 64px;
 }
 
 .delivery-form {
@@ -852,20 +840,26 @@ img {
   margin-bottom: 10px;
 }
 
-.delivery-form > p:nth-child(2) {
+.date-tel-group {
+  display: flex;
+  column-gap: 16px;
+  align-items: flex-end;
+}
+
+.date-tel-group > p:nth-child(1) {
   width: 117px;
 }
 
-.delivery-form > p:nth-child(3) {
+.date-tel-group > p:nth-child(2) {
   width: 287px;
 }
 
-.delivery-form > p:nth-child(4) {
+.delivery-form > p:nth-child(3) {
   width: 100%;
   margin-bottom: 5px;
 }
 
-.delivery-form > p:nth-child(5) {
+.delivery-form > p:nth-child(4) {
   margin: auto;
 }
 
@@ -942,6 +936,7 @@ img {
   margin: 0;
   padding: 0;
 }
+
 
 .field-group-data {
   margin-bottom: 8px;
@@ -1155,7 +1150,7 @@ img {
 
 .address {
   margin-top: 78px;
-  min-height: 492px;
+  min-height: 490px;
   padding: 0;
   border-radius: 16px;
   background: #E3C0C4 url("../img/bg/address-bg.jpg") no-repeat;
@@ -1205,7 +1200,11 @@ img {
   color: #565C66;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
+}
+
+.section-address > button {
+  transform: translate(-6px, -1px);
 }
 
 .page-footer {
@@ -1348,6 +1347,8 @@ img {
   flex-direction: column;
   justify-content: end;
   margin-left: auto;
+  gap: 9px;
+  padding-top: 20px;
 }
 
 .footer-developer,
@@ -1361,15 +1362,16 @@ img {
 .footer-developer p,
 .footer-developer img {
   margin: 0;
+  padding: 0;
 }
 
 .footer-developer a {
-  padding: 16px 0;
+  width: min-content;
 }
 
 .footer-developer a,
 .footer-developer p {
-  margin-right: 7px;
+  margin-right: 8px;
 }
 
 .visually-hidden {

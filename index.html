@@ -13,8 +13,10 @@
   <div class="page-container">
 
     <header class="page-header">
+      <a>
+        <img src="img/logo.svg" width="137" height="56" alt="Логотип «Глейси Шоп»">
+      </a>
 
-      <a class="logo"><img src="img/logo.svg" width="137" height="56" alt="Логотип «Глейси Шоп»"></a>
 
       <nav class="navigation">
         <ul class="navigation-list list-none">
@@ -462,18 +464,20 @@
 
         <form action="https://echo.htmlacademy.ru/" method="POST" class="delivery-form forms-states">
           <p class="field-group">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
-          <p class="field-group">
-            <span class="field-group-data">
-              <label for="delivery-form-date">Дата</label>
-              <button class="info pointer" type="button" aria-label="Посмотреть дополнительную информацию"></button>
-              <span class="tooltip tooltip-date tooltip-off">Укажите желаемую дату</span>
-            </span>
-            <input class="forms" type="text" name="date" id="delivery-form-date" placeholder="01.04.2020">
-          </p>
-          <p class="field-group">
-            <span class="field-group-data"><label for="delivery-form-tel">Телефон</label></span>
-            <input class="forms" type="tel" name="tel" id="delivery-form-tel" placeholder="+7 800 999-00-00" required>
-          </p>
+          <div class="date-tel-group">
+            <p class="field-group">
+              <span class="field-group-data">
+                <label for="delivery-form-date">Дата</label>
+                <button class="info pointer" type="button" aria-label="Посмотреть дополнительную информацию"></button>
+                <span class="tooltip tooltip-date tooltip-off">Укажите желаемую дату</span>
+              </span>
+              <input class="forms" type="text" name="date" id="delivery-form-date" placeholder="01.04.2020">
+            </p>
+            <p class="field-group">
+              <span class="field-group-data"><label for="delivery-form-tel">Телефон</label></span>
+              <input class="forms" type="tel" name="tel" id="delivery-form-tel" placeholder="+7 800 999-00-00" required>
+            </p>
+          </div>
           <p class="field-group">
             <span class="field-group-data">
               <label for="delivery-form-address">Адрес</label>
