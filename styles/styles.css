@@ -1729,9 +1729,8 @@ img {
   margin: 0;
 }
 
-.control {
+.catalog-filter-item {
   position: relative;
-  display: block;
 }
 
 .control-label {
@@ -1814,21 +1813,18 @@ img {
   background: url(../img/icons/checkbox-checked-disabled.svg) no-repeat;
 }
 
-.control-label[tabindex="0"]:focus {
-  outline: none;
-}
-
-.control-label[tabindex="0"]:focus::before {
+.control-input[type="radio"]:focus + .control-label::before {
   border: 2px solid #FFFFFF;
 }
 
-.control-input[type="checkbox"]:focus + .control-label::before {
+.control-input[type="radio"]:checked:focus + .control-label::after {
+  background-color: #FFFFFF;
+}
+
+.control-input[type="checkbox"]:not(:checked):focus + .control-label::before {
   background: url(../img/icons/checkbox-hover.svg) no-repeat;
 }
 
 .control-input[type="checkbox"]:checked:focus + .control-label::after {
   background: url(../img/icons/checkbox-checked-hover.svg) no-repeat;
 }
-
-
-
