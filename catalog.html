@@ -18,7 +18,17 @@
 
       <nav>
         <ul class="navigation-list list-none">
-          <li class="navigation-item"><a class="navigation-link focus pointer">Каталог</a></li>
+          <li class="navigation-item">
+            <a class="navigation-link focus pointer submenu-focus submenu-focus-off">Каталог</a>
+            <ul class="submenu list-none focus pointer submenu-off">
+              <li class="submenu-item"><a class="submenu-link" href="catalog/new.html">Новинки</a></li>
+              <li class="submenu-item"><a class="submenu-link">Сливочное</a></li>
+              <!-- href="catalog/creamy.html" -->
+              <li class="submenu-item"><a class="submenu-link" href="catalog/sherbet.html">Щербеты</a></li>
+              <li class="submenu-item"><a class="submenu-link" href="catalog/fruit-ice.html">Фруктовый лед</a></li>
+              <li class="submenu-item"><a class="submenu-link" href="catalog/melorin.html">Мелорин</a></li>
+            </ul>
+          </li>
           <li class="navigation-item"><a class="navigation-link focus pointer" href="delivery-payment.html">Доставка и оплата</a></li>
           <li class="navigation-item"><a class="navigation-link focus pointer" href="about.html">О компании</a></li>
         </ul>
@@ -79,8 +89,7 @@
 
         <li class="navigation-item">
           <a class="navigation-link link-user link-user-cart focus pointer" href="#">
-            <div class="icon navigation-icon-cart navigation-icon-full"></div>
-            <span>2 товара</span>
+            <span aria-label="Корзина не пустая"class="icon-cart icon-cart-full">2 товара</span>
           </a>
 
           <div class="popover popover-cart">
@@ -182,7 +191,7 @@
               </li>
               <li class="catalog-filter-item">
                   <input id="fatness-10"  type="radio" name="fatness" class="visually-hidden control-input" value="10%">
-                  <label for="fatness-10" class="control-label">10%</label>
+                  <label for="fatness-10" class="control-label">до 10%</label>
               </li>
               <li class="catalog-filter-item">
                   <input id="fatness-30" type="radio" name="fatness" class="visually-hidden control-input" value="30%">
@@ -259,7 +268,7 @@
         <li class="showcase-item">
           <img src="img/product/blueberry.png" width="168" height="168" class="showcase-img" alt="Черника">
           <h4>Черника</h4>
-          <p>Крем-брюле с черничным джемом</p>
+          <p>Крем-брюле<br> с черничным джемом</p>
           <div>
             <span>330 ₽/кг</span>
             <button type="button" class="button-cart focus pointer">
@@ -273,7 +282,7 @@
         <li class="showcase-item">
           <img src="img/product/bubble-gum.png" width="168" height="168" class="showcase-img" alt="Бабл-гам">
           <h4>Бабл-гам</h4>
-          <p>Ванильный пломбир со сладкой посыпкой</p>
+          <p>Ванильный пломбир<br> со сладкой посыпкой</p>
           <div>
             <span>320 ₽/кг</span>
             <button type="button" class="button-cart focus pointer">
@@ -301,7 +310,7 @@
         <li class="showcase-item">
           <img src="img/product/banana.png" width="168" height="168" class="showcase-img" alt="Банан">
           <h4>Банан</h4>
-          <p>Сливочный пломбир с банановым вкусом</p>
+          <p>Сливочный пломбир<br> с банановым вкусом</p>
           <div>
             <span>340 ₽/кг</span>
             <button type="button" class="button-cart focus pointer">
@@ -329,7 +338,7 @@
         <li class="showcase-item">
           <img src="img/product/strawberry.png" width="168" height="168" class="showcase-img" alt="Клубничка">
           <h4>Клубничка</h4>
-          <p>Сливочный пломбир с клубничным вкусом</p>
+          <p>Сливочный пломбир<br> с клубничным вкусом</p>
           <div>
             <span>300 ₽/кг</span>
             <button type="button" class="button-cart focus pointer">
